@@ -1,0 +1,68 @@
+{
+  "request_id": "PREFERENCE-001",
+  "material_id": "P01",
+  "mode": "offline",
+  "model": "offline-simulator",
+  "review": {
+    "status": "pass",
+    "hard_block": false,
+    "missing_fields": [],
+    "checks": [
+      {
+        "rule_id": "required_title",
+        "status": "pass",
+        "severity": "missing_information",
+        "message": "title is required"
+      },
+      {
+        "rule_id": "required_text",
+        "status": "pass",
+        "severity": "missing_information",
+        "message": "text is required"
+      },
+      {
+        "rule_id": "rights_status_known",
+        "status": "pass",
+        "severity": "missing_information",
+        "message": "material rights_status is owned or licensed"
+      },
+      {
+        "rule_id": "blocked_terms_1",
+        "status": "pass",
+        "severity": "hard",
+        "message": "blocked_terms",
+        "evidence": []
+      },
+      {
+        "rule_id": "risk_terms_1",
+        "status": "pass",
+        "severity": "risk",
+        "message": "risk_terms",
+        "evidence": []
+      }
+    ],
+    "risks": []
+  },
+  "risks": [],
+  "original_time": "2026-11-03T18:00:00+08:00",
+  "review_status": "pass",
+  "risk_reasons": [],
+  "missing_fields": [],
+  "pending_items": [
+    {
+      "type": "time_change",
+      "original_time": "2026-11-03T18:00:00+08:00",
+      "suggested_time": "2026-11-03T19:00:00+08:00"
+    }
+  ],
+  "suggested_time": "2026-11-03T19:00:00+08:00",
+  "confirmation_status": "pending",
+  "save_status": "saved",
+  "draft_id": "draft_c26343c39b2849bb98965c56969b666f",
+  "task_status": "pending_confirmation",
+  "draft_status": "pending_confirmation",
+  "run_completed": true,
+  "next_step": "review_and_confirm_draft",
+  "steps": 5,
+  "stop_reason": "model_finished_after_saved_draft"
+}

@@ -5,7 +5,9 @@ import json
 from datetime import timedelta
 from pathlib import Path
 
-from .domain import ValidationError, iso, parse_time, same_time, validate_request
+from .domain import ValidationError, iso, parse_time, same_time, validate_request, utc_text
+from .policy import load_policy, load_candidate_context
+from .store import StorageError
 
 
 class ToolError(ValueError):
@@ -33,7 +35,8 @@ class ToolSet:
             self.materials = {str(k): dict(v, material_id=v.get("material_id", k)) for k, v in raw.items()}
         else:
             self.materials = {str(item["material_id"]): item for item in raw}
-        self.rules = _load(self.data_dir / "rules.json", {})
+        self.rules = load_policy(self.data_dir / "rules.json")
+        self.candidate_context = load_candidate_context(self.data_dir / "candidate_context.json")
         schedules_path = self.data_dir / "schedules.json"
         if schedules_path.exists():
             self.store.import_schedules(_load(schedules_path, {"schedules": []}))
@@ -81,10 +84,12 @@ class ToolSet:
         if ident not in self.materials:
             raise ToolError("material was not found", "material_not_found", False)
         item = dict(self.materials[ident])
-        duration = item.get("duration_minutes", 60)
+        configured_interval = self.rules.get("scheduling_policy", {}).get("posting_interval_minutes")
+        duration = configured_interval if configured_interval is not None else item.get("duration_minutes", 60)
         if isinstance(duration, bool) or not isinstance(duration, (int, float)) or duration <= 0 or duration > 1440:
-            raise ToolError("material duration_minutes must be between 0 and 1440")
-        item["duration_minutes"] = duration
+            raise ToolError("posting interval must be between 0 and 1440 minutes")
+        item["posting_interval_minutes"] = duration
+        item["interval_source"] = "policy" if configured_interval is not None else "legacy_duration_minutes_or_default"
         item.setdefault("channel", "default")
         self.material = item
         return {"status": "ok", "material": item,
@@ -132,7 +137,7 @@ class ToolSet:
             found = [term for term in patterns if term.casefold() in target.casefold()]
             if kind in ("required_field", "required"):
                 field = rule.get("field", pattern)
-                violated = not str(item.get(field, "")).strip()
+                violated = item.get(field) is None or not str(item.get(field, "")).strip()
             elif kind in ("required_terms", "required_term", "must_include"):
                 violated = len(found) != len(patterns)
             elif kind == "max_length":
@@ -164,7 +169,7 @@ class ToolSet:
             raise ToolError("missing material information must be supplied before scheduling", "missing_information", False)
         self.last_proposed_slot = None
         request = self.request
-        duration = timedelta(minutes=self.material["duration_minutes"])
+        duration = timedelta(minutes=self.material["posting_interval_minutes"])
         requested = parse_time(request["requested_time"])
         channel = self.material["channel"]
         if request["time_requirement"] == "window":
@@ -196,8 +201,11 @@ class ToolSet:
                 candidates.append({"start": iso(cursor), "end": iso(finish), "channel": channel})
                 cursor += timedelta(minutes=15)
         original_conflicts = self.store.conflicts(iso(requested), iso(requested + duration), channel)
+        for candidate in candidates:
+            candidate.update(self.candidate_context.get((channel, utc_text(parse_time(candidate["start"]))), {}))
         self.slots = {"status": "available" if candidates else "no_slots",
                       "original_conflicts": original_conflicts, "candidates": candidates,
+                      "posting_interval_minutes": self.material["posting_interval_minutes"],
                       "scope": {"start": iso(begin), "end": iso(end), "channel": channel}}
         return dict(self.slots)
 
@@ -237,6 +245,10 @@ class ToolSet:
         try:
             result = self.store.save_draft(request, slot["start"], slot["end"], slot["channel"],
                                            confirmation, self.review, fail_before_commit=fail)
+        except StorageError as exc:
+            self.save_status = exc.outcome
+            return {"status": exc.outcome, "code": exc.code, "retryable": exc.retryable,
+                    "message": str(exc)}
         except OSError:
             self.save_status = "failed"
             retryable = self.fault != "save_fail_permanent"

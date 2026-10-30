@@ -44,7 +44,7 @@ def audit():
     for name in required:
         check("required:" + name, (ROOT / name).is_file())
 
-    for rel in ("examples/live", "examples/live-repeats", "examples/offline", "examples/iterations/v1"):
+    for rel in ("examples/live", "examples/live-repeats", "examples/offline", "examples/iterations/v1", "examples/revision/live", "examples/revision/offline"):
         directory = ROOT / rel
         manifest_path = directory / "summary.json"
         check("manifest:" + rel, manifest_path.exists())
@@ -58,7 +58,7 @@ def audit():
               summary["passed_runs"] == (10 if historical else summary["total_runs"]))
         if not historical:
             check("source_stable:" + rel, summary.get("source_unchanged_during_run") is True)
-        source_root = directory / "source_snapshot" if historical else ROOT
+        source_root = directory / "source_snapshot" if historical else (ROOT / "examples/iterations/v2/source_snapshot" if rel in ("examples/live", "examples/live-repeats", "examples/offline") else ROOT)
         for name, expected_hash in summary["source_sha256"].items():
             path = source_root / name
             check("source_hash:" + rel + ":" + name, path.is_file() and sha(path) == expected_hash)
@@ -76,6 +76,21 @@ def audit():
                     check("provider_model:" + rel + ":" + name,
                           all(p.get("requested_model") == "qwen3.8-max" and p.get("response_model") == "qwen3.8-max" for p in provider))
         check("actual_provider_call_count:" + rel, responses == summary["provider_calls"])
+
+    preference_path = ROOT / "examples/revision/preferences/summary.json"
+    check("preference_manifest", preference_path.exists())
+    if preference_path.exists():
+        pref = read_json(preference_path)
+        check("preference_live_success", pref.get("live_success") is True)
+        check("preference_source_stable", pref.get("source_unchanged_during_run") is True)
+        for name, expected in pref["source_sha256"].items():
+            check("preference_source:" + name, (ROOT / name).is_file() and sha(ROOT / name) == expected)
+        directory = preference_path.parent
+        for record in pref["records"] + pref["earliest_baseline"]:
+            for name, expected in record["artifacts"].items():
+                check("preference_artifact:" + name, (directory / name).is_file() and sha(directory / name) == expected)
+        for name, expected in pref["fixture_sha256"].items():
+            check("preference_fixture:" + name, sha(directory / name) == expected)
 
     broken_links = []
     for path in files():

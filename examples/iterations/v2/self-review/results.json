@@ -1,0 +1,106 @@
+[
+  {
+    "case": "risk-baseline",
+    "exit_code": 0,
+    "output_exists": true,
+    "result": {
+      "task_status": "pending_confirmation",
+      "review_status": "risk",
+      "save_status": "saved",
+      "confirmation_status": "pending",
+      "risk_reasons": [
+        "risk_terms_1: risk_terms [绝对领先]"
+      ],
+      "stop_reason": "model_finished_after_saved_draft"
+    },
+    "stderr_last_line": null,
+    "draft_count": 1,
+    "last_event": {
+      "step": 5,
+      "event": "model_decision",
+      "model": "offline-simulator",
+      "raw_action": {
+        "action": "finish",
+        "arguments": {},
+        "reason": "offline process simulation"
+      },
+      "action": "finish",
+      "arguments": {},
+      "reason": "offline process simulation",
+      "validation": "accepted",
+      "next_action": "stop"
+    }
+  },
+  {
+    "case": "missing-rules",
+    "exit_code": 0,
+    "output_exists": true,
+    "result": {
+      "task_status": "completed",
+      "review_status": "pass",
+      "save_status": "saved",
+      "confirmation_status": "not_required",
+      "risk_reasons": [],
+      "stop_reason": "model_finished_after_saved_draft"
+    },
+    "stderr_last_line": null,
+    "draft_count": 1,
+    "last_event": {
+      "step": 5,
+      "event": "model_decision",
+      "model": "offline-simulator",
+      "raw_action": {
+        "action": "finish",
+        "arguments": {},
+        "reason": "offline process simulation"
+      },
+      "action": "finish",
+      "arguments": {},
+      "reason": "offline process simulation",
+      "validation": "accepted",
+      "next_action": "stop"
+    }
+  },
+  {
+    "case": "sqlite-insert-rejected",
+    "exit_code": 1,
+    "output_exists": true,
+    "result": {
+      "task_status": "incomplete",
+      "review_status": "pass",
+      "save_status": "not_saved",
+      "confirmation_status": "not_required",
+      "risk_reasons": [],
+      "stop_reason": "model_call_failed"
+    },
+    "stderr_last_line": null,
+    "draft_count": 0,
+    "last_event": {
+      "step": 4,
+      "event": "model_decision",
+      "model": "offline-simulator",
+      "raw_action": {
+        "action": "save_draft",
+        "arguments": {
+          "suggested_time": "2026-11-01T17:00:00+08:00"
+        },
+        "reason": "offline process simulation"
+      },
+      "action": "save_draft",
+      "arguments": {
+        "suggested_time": "2026-11-01T17:00:00+08:00"
+      },
+      "reason": "offline process simulation",
+      "validation": "model_error",
+      "error": "IntegrityError",
+      "next_action": "stop"
+    }
+  },
+  {
+    "case": "sqlite-invalid-file",
+    "exit_code": 1,
+    "output_exists": false,
+    "result": null,
+    "stderr_last_line": "sqlite3.DatabaseError: file is not a database"
+  }
+]

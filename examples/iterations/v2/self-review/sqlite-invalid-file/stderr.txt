@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Administrator\Documents\Codex\2026-10-30\ai-agent-agent-github-ai-1\outputs\material-scheduling-agent\src\main.py", line 60, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\Users\Administrator\Documents\Codex\2026-10-30\ai-agent-agent-github-ai-1\outputs\material-scheduling-agent\src\main.py", line 31, in main
+    store = DraftStore(args.db)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Documents\Codex\2026-10-30\ai-agent-agent-github-ai-1\outputs\material-scheduling-agent\src\store.py", line 25, in __init__
+    self.connection.executescript("""
+sqlite3.DatabaseError: file is not a database

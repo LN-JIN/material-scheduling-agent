@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "tests",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "check": "scenarios",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "check": "native-errors",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "check": "preferences-baseline",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "check": "evidence",
+      "passed": true,
+      "exit_code": 0
+    }
+  ],
+  "scope": "No live API calls; validates behavior and consistency of archived live evidence."
+}

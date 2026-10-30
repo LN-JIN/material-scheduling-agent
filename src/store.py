@@ -14,6 +14,16 @@ class StoreConflict(ValueError):
     """The same request key was reused with a different original payload."""
 
 
+class StorageError(RuntimeError):
+    """Save outcome is established from transaction state, not exception wording."""
+    def __init__(self, outcome, retryable=False):
+        self.outcome = outcome
+        self.retryable = retryable
+        self.code = "storage_write_failed" if outcome == "failed" else "storage_outcome_unknown"
+        super().__init__("storage write failed and was not committed" if outcome == "failed" else
+                         "storage outcome unknown; reconcile using the same request")
+
+
 class DraftStore:
     def __init__(self, db_path, schedules=None):
         self.db_path = str(db_path)
@@ -21,6 +31,13 @@ class DraftStore:
             Path(self.db_path).parent.mkdir(parents=True, exist_ok=True)
         self.connection = sqlite3.connect(self.db_path, timeout=10, isolation_level=None)
         self.connection.row_factory = sqlite3.Row
+        try:
+            self._initialize(schedules)
+        except Exception:
+            self.connection.close()
+            raise
+
+    def _initialize(self, schedules):
         self.connection.execute("PRAGMA busy_timeout=10000")
         self.connection.executescript("""
             CREATE TABLE IF NOT EXISTS requests (
@@ -141,8 +158,10 @@ class DraftStore:
     def save_draft(self, request, start, end, channel, confirmation_status, review, fail_before_commit=False):
         """Return an existing draft first; otherwise atomically check occupancy and save."""
         conn = self.connection
-        conn.execute("BEGIN IMMEDIATE")
+        stage = "begin"
         try:
+            conn.execute("BEGIN IMMEDIATE")
+            stage = "write"
             bound = conn.execute(
                 "SELECT payload_hash FROM requests WHERE request_id=?",
                 (request["request_id"],),
@@ -173,8 +192,27 @@ class DraftStore:
             ))
             if fail_before_commit:
                 raise OSError("injected save failure before commit")
+            stage = "commit"
             conn.execute("COMMIT")
             return {"status": "saved", "idempotent": False, "draft": draft}
+        except sqlite3.Error as exc:
+            active = conn.in_transaction
+            rollback_ok = False
+            try:
+                if active:
+                    conn.execute("ROLLBACK")
+                    rollback_ok = True
+            except sqlite3.Error:
+                pass
+            definite_failure = stage == "begin" or rollback_ok or (stage == "write" and not active)
+            outcome = "failed" if definite_failure else "unknown"
+            code = getattr(exc, "sqlite_errorcode", None)
+            # Python 3.10 does not expose sqlite_errorcode; exact native lock
+            # messages are used only for classification, never exposed to users.
+            busy = (code & 255) in (5, 6) if code is not None else str(exc) in (
+                "database is locked", "database table is locked", "database schema is locked")
+            retryable = outcome == "unknown" or busy
+            raise StorageError(outcome, retryable) from None
         except Exception:
             if conn.in_transaction:
                 conn.execute("ROLLBACK")

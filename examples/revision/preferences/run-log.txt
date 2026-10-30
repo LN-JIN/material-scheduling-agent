@@ -1,0 +1,79 @@
+$ python -m src.main --input examples/revision/preferences/support-first.r01.offline.input.json --mode offline --db .runtime/preferences/20261030T144302Z-bedda5/support-first.r01.offline.sqlite --output examples/revision/preferences/support-first.r01.offline.output.json --trace examples/revision/preferences/support-first.r01.offline.trace.jsonl --data-dir examples/revision/preferences/fixtures/common --max-steps 12
+exit=0; elapsed=0.228s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_335b7ebaa51449b29355b4868646f80c", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/support-first.r01.live.input.json --mode live --db .runtime/preferences/20261030T144302Z-bedda5/support-first.r01.live.sqlite --output examples/revision/preferences/support-first.r01.live.output.json --trace examples/revision/preferences/support-first.r01.live.trace.jsonl --data-dir examples/revision/preferences/fixtures/common --max-steps 12
+exit=0; elapsed=11.792s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_18cbe4fbcfc84b78a9e644018637e5c8", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/audience-first.r01.offline.input.json --mode offline --db .runtime/preferences/20261030T144302Z-bedda5/audience-first.r01.offline.sqlite --output examples/revision/preferences/audience-first.r01.offline.output.json --trace examples/revision/preferences/audience-first.r01.offline.trace.jsonl --data-dir examples/revision/preferences/fixtures/common --max-steps 12
+exit=0; elapsed=0.222s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_9092c3a7ef754fecb909e6c479a4eb97", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/audience-first.r01.live.input.json --mode live --db .runtime/preferences/20261030T144302Z-bedda5/audience-first.r01.live.sqlite --output examples/revision/preferences/audience-first.r01.live.output.json --trace examples/revision/preferences/audience-first.r01.live.trace.jsonl --data-dir examples/revision/preferences/fixtures/common --max-steps 12
+exit=0; elapsed=14.031s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_bbcfd5d55c594a83985766fa2b16b793", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/audience-changed.r01.offline.input.json --mode offline --db .runtime/preferences/20261030T144302Z-bedda5/audience-changed.r01.offline.sqlite --output examples/revision/preferences/audience-changed.r01.offline.output.json --trace examples/revision/preferences/audience-changed.r01.offline.trace.jsonl --data-dir examples/revision/preferences/fixtures/audience-changed --max-steps 12
+exit=0; elapsed=0.223s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_021c5fcd2a1d4bd38e9b758fd29c5e3e", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/audience-changed.r01.live.input.json --mode live --db .runtime/preferences/20261030T144302Z-bedda5/audience-changed.r01.live.sqlite --output examples/revision/preferences/audience-changed.r01.live.output.json --trace examples/revision/preferences/audience-changed.r01.live.trace.jsonl --data-dir examples/revision/preferences/fixtures/audience-changed --max-steps 12
+exit=0; elapsed=10.062s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_95822b0cc5d94f57a6455c6dc15c78d3", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/support-unavailable.r01.offline.input.json --mode offline --db .runtime/preferences/20261030T144302Z-bedda5/support-unavailable.r01.offline.sqlite --output examples/revision/preferences/support-unavailable.r01.offline.output.json --trace examples/revision/preferences/support-unavailable.r01.offline.trace.jsonl --data-dir examples/revision/preferences/fixtures/support-unavailable --max-steps 12
+exit=0; elapsed=0.209s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_c26343c39b2849bb98965c56969b666f", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/support-unavailable.r01.live.input.json --mode live --db .runtime/preferences/20261030T144302Z-bedda5/support-unavailable.r01.live.sqlite --output examples/revision/preferences/support-unavailable.r01.live.output.json --trace examples/revision/preferences/support-unavailable.r01.live.trace.jsonl --data-dir examples/revision/preferences/fixtures/support-unavailable --max-steps 12
+exit=0; elapsed=10.945s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_b484898708314047bf4d85927a8c9101", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/support-first.r02.offline.input.json --mode offline --db .runtime/preferences/20261030T144302Z-bedda5/support-first.r02.offline.sqlite --output examples/revision/preferences/support-first.r02.offline.output.json --trace examples/revision/preferences/support-first.r02.offline.trace.jsonl --data-dir examples/revision/preferences/fixtures/common --max-steps 12
+exit=0; elapsed=0.219s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_c7f4a4afaa964f3288df75d38cb1e666", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/support-first.r02.live.input.json --mode live --db .runtime/preferences/20261030T144302Z-bedda5/support-first.r02.live.sqlite --output examples/revision/preferences/support-first.r02.live.output.json --trace examples/revision/preferences/support-first.r02.live.trace.jsonl --data-dir examples/revision/preferences/fixtures/common --max-steps 12
+exit=0; elapsed=11.933s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_15a6d21e93c14a229384100386ddc269", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/audience-first.r02.offline.input.json --mode offline --db .runtime/preferences/20261030T144302Z-bedda5/audience-first.r02.offline.sqlite --output examples/revision/preferences/audience-first.r02.offline.output.json --trace examples/revision/preferences/audience-first.r02.offline.trace.jsonl --data-dir examples/revision/preferences/fixtures/common --max-steps 12
+exit=0; elapsed=0.22s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_837797b2a65e4f11a8b685c9f2d4e811", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/audience-first.r02.live.input.json --mode live --db .runtime/preferences/20261030T144302Z-bedda5/audience-first.r02.live.sqlite --output examples/revision/preferences/audience-first.r02.live.output.json --trace examples/revision/preferences/audience-first.r02.live.trace.jsonl --data-dir examples/revision/preferences/fixtures/common --max-steps 12
+exit=0; elapsed=11.367s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_57ab3f90d7b64fdf98bfa6525c592daa", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/audience-changed.r02.offline.input.json --mode offline --db .runtime/preferences/20261030T144302Z-bedda5/audience-changed.r02.offline.sqlite --output examples/revision/preferences/audience-changed.r02.offline.output.json --trace examples/revision/preferences/audience-changed.r02.offline.trace.jsonl --data-dir examples/revision/preferences/fixtures/audience-changed --max-steps 12
+exit=0; elapsed=0.213s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_3ac7c3f0ff7c4429af11122c98f13476", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/audience-changed.r02.live.input.json --mode live --db .runtime/preferences/20261030T144302Z-bedda5/audience-changed.r02.live.sqlite --output examples/revision/preferences/audience-changed.r02.live.output.json --trace examples/revision/preferences/audience-changed.r02.live.trace.jsonl --data-dir examples/revision/preferences/fixtures/audience-changed --max-steps 12
+exit=0; elapsed=11.35s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_b46989759a8a432ea5309da19903672b", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/support-unavailable.r02.offline.input.json --mode offline --db .runtime/preferences/20261030T144302Z-bedda5/support-unavailable.r02.offline.sqlite --output examples/revision/preferences/support-unavailable.r02.offline.output.json --trace examples/revision/preferences/support-unavailable.r02.offline.trace.jsonl --data-dir examples/revision/preferences/fixtures/support-unavailable --max-steps 12
+exit=0; elapsed=0.216s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_c01eb79a079546d596d9d2ad4384e4a1", "steps": 5}
+
+
+$ python -m src.main --input examples/revision/preferences/support-unavailable.r02.live.input.json --mode live --db .runtime/preferences/20261030T144302Z-bedda5/support-unavailable.r02.live.sqlite --output examples/revision/preferences/support-unavailable.r02.live.output.json --trace examples/revision/preferences/support-unavailable.r02.live.trace.jsonl --data-dir examples/revision/preferences/fixtures/support-unavailable --max-steps 12
+exit=0; elapsed=13.029s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_67b78888aacd478fa7551579d77dbeff", "steps": 5}
+

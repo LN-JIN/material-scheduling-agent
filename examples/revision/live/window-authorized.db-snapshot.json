@@ -1,0 +1,32 @@
+{
+  "requests": [
+    {
+      "request_id": "R005",
+      "material_id": "M01",
+      "payload_hash": "ff78ca3ec975d97c9d9086fc2b1426f9c29fd162b95461c1d12adb72d95a1d0a",
+      "payload_json": "{\"allowed_end\": \"2026-11-01T21:00:00+08:00\", \"allowed_start\": \"2026-11-01T18:00:00+08:00\", \"material_id\": \"M01\", \"note\": \"在已授权范围内优先选择最早的完整可用时段。\", \"request_id\": \"R005\", \"requested_time\": \"2026-11-01T18:00:00+08:00\", \"time_requirement\": \"window\"}"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "draft_1f56d074f5ba4e2b8003f68390f442aa",
+      "request_id": "R005",
+      "material_id": "M01",
+      "channel": "main",
+      "start_time": "2026-11-01T11:00:00.000000+00:00",
+      "end_time": "2026-11-01T12:00:00.000000+00:00",
+      "confirmation_status": "not_required",
+      "result_json": "{\"draft_id\": \"draft_1f56d074f5ba4e2b8003f68390f442aa\", \"request_id\": \"R005\", \"material_id\": \"M01\", \"original_time\": \"2026-11-01T18:00:00+08:00\", \"suggested_time\": \"2026-11-01T19:00:00+08:00\", \"end_time\": \"2026-11-01T20:00:00+08:00\", \"channel\": \"main\", \"confirmation_status\": \"not_required\", \"save_status\": \"saved\", \"review\": {\"status\": \"pass\", \"hard_block\": false, \"missing_fields\": [], \"checks\": [{\"rule_id\": \"required_title\", \"status\": \"pass\", \"severity\": \"missing_information\", \"message\": \"title is required\"}, {\"rule_id\": \"required_text\", \"status\": \"pass\", \"severity\": \"missing_information\", \"message\": \"text is required\"}, {\"rule_id\": \"rights_status_known\", \"status\": \"pass\", \"severity\": \"missing_information\", \"message\": \"material rights_status is owned or licensed\"}, {\"rule_id\": \"blocked_terms_1\", \"status\": \"pass\", \"severity\": \"hard\", \"message\": \"blocked_terms\", \"evidence\": []}, {\"rule_id\": \"risk_terms_1\", \"status\": \"pass\", \"severity\": \"risk\", \"message\": \"risk_terms\", \"evidence\": []}], \"risks\": []}, \"task_status\": \"completed\"}"
+    }
+  ],
+  "reservations": [
+    {
+      "reservation_id": "schedule:S01",
+      "material_id": "EXISTING01",
+      "channel": "main",
+      "start_time": "2026-11-01T10:00:00.000000+00:00",
+      "end_time": "2026-11-01T11:00:00.000000+00:00"
+    }
+  ],
+  "integrity_check": "ok"
+}

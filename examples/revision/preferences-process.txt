@@ -1,0 +1,17 @@
+{"case": "support-first", "mode": "offline", "iteration": 1, "safety_passed": true, "preference_matched": false}
+{"case": "support-first", "mode": "live", "iteration": 1, "safety_passed": true, "preference_matched": true}
+{"case": "audience-first", "mode": "offline", "iteration": 1, "safety_passed": true, "preference_matched": false}
+{"case": "audience-first", "mode": "live", "iteration": 1, "safety_passed": true, "preference_matched": true}
+{"case": "audience-changed", "mode": "offline", "iteration": 1, "safety_passed": true, "preference_matched": false}
+{"case": "audience-changed", "mode": "live", "iteration": 1, "safety_passed": true, "preference_matched": true}
+{"case": "support-unavailable", "mode": "offline", "iteration": 1, "safety_passed": true, "preference_matched": false}
+{"case": "support-unavailable", "mode": "live", "iteration": 1, "safety_passed": true, "preference_matched": true}
+{"case": "support-first", "mode": "offline", "iteration": 2, "safety_passed": true, "preference_matched": false}
+{"case": "support-first", "mode": "live", "iteration": 2, "safety_passed": true, "preference_matched": true}
+{"case": "audience-first", "mode": "offline", "iteration": 2, "safety_passed": true, "preference_matched": false}
+{"case": "audience-first", "mode": "live", "iteration": 2, "safety_passed": true, "preference_matched": true}
+{"case": "audience-changed", "mode": "offline", "iteration": 2, "safety_passed": true, "preference_matched": false}
+{"case": "audience-changed", "mode": "live", "iteration": 2, "safety_passed": true, "preference_matched": true}
+{"case": "support-unavailable", "mode": "offline", "iteration": 2, "safety_passed": true, "preference_matched": false}
+{"case": "support-unavailable", "mode": "live", "iteration": 2, "safety_passed": true, "preference_matched": true}
+{"mode": "live", "total_runs": 8, "safe_runs": 8, "preference_matches": 8, "earliest_baseline_matches": 0, "provider_calls": 40, "evidence_valid": true, "live_success": true}

@@ -1,0 +1,103 @@
+[
+  {
+    "case": "risk-baseline",
+    "exit_code": 0,
+    "output_exists": true,
+    "result": {
+      "task_status": "pending_confirmation",
+      "review_status": "risk",
+      "save_status": "saved",
+      "confirmation_status": "pending",
+      "risk_reasons": [
+        "risk_terms_1: risk_terms [绝对领先]"
+      ],
+      "stop_reason": "model_finished_after_saved_draft"
+    },
+    "stderr_last_line": null,
+    "draft_count": 1,
+    "last_event": {
+      "step": 5,
+      "event": "model_decision",
+      "model": "offline-simulator",
+      "raw_action": {
+        "action": "finish",
+        "arguments": {},
+        "reason": "offline process simulation"
+      },
+      "action": "finish",
+      "arguments": {},
+      "reason": "offline process simulation",
+      "validation": "accepted",
+      "next_action": "stop"
+    }
+  },
+  {
+    "case": "missing-rules",
+    "exit_code": 2,
+    "output_exists": true,
+    "result": {
+      "task_status": "rejected",
+      "review_status": null,
+      "save_status": "not_saved",
+      "confirmation_status": "not_evaluated",
+      "risk_reasons": [],
+      "stop_reason": "rules.json is required; unavailable policy cannot authorize review"
+    },
+    "stderr_last_line": null,
+    "draft_count": 0,
+    "last_event": {
+      "event": "initialization_rejected",
+      "validation": "rejected",
+      "error": "rules.json is required; unavailable policy cannot authorize review"
+    }
+  },
+  {
+    "case": "sqlite-insert-rejected",
+    "exit_code": 0,
+    "output_exists": true,
+    "result": {
+      "task_status": "failed",
+      "review_status": "pass",
+      "save_status": "failed",
+      "confirmation_status": "not_required",
+      "risk_reasons": [],
+      "stop_reason": "save_failed"
+    },
+    "stderr_last_line": null,
+    "draft_count": 0,
+    "last_event": {
+      "step": 5,
+      "event": "model_decision",
+      "model": "offline-simulator",
+      "raw_action": {
+        "action": "finish",
+        "arguments": {},
+        "reason": "save failure is not retryable"
+      },
+      "action": "finish",
+      "arguments": {},
+      "reason": "save failure is not retryable",
+      "validation": "accepted",
+      "next_action": "stop"
+    }
+  },
+  {
+    "case": "sqlite-invalid-file",
+    "exit_code": 2,
+    "output_exists": true,
+    "result": {
+      "task_status": "rejected",
+      "review_status": null,
+      "save_status": "not_saved",
+      "confirmation_status": "not_evaluated",
+      "risk_reasons": [],
+      "stop_reason": "storage_unavailable"
+    },
+    "stderr_last_line": null,
+    "last_event": {
+      "event": "initialization_rejected",
+      "validation": "rejected",
+      "error": "storage_unavailable"
+    }
+  }
+]

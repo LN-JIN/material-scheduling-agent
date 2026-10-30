@@ -1,0 +1,1592 @@
+{
+  "run_id": "20261030T144302Z-bedda5",
+  "mode": "live",
+  "records": [
+    {
+      "case": "support-first",
+      "iteration": 1,
+      "mode": "live",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_evidence",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T19:30:00+08:00",
+      "actual_selected_time": "2026-11-03T19:30:00+08:00",
+      "preference_matched": true,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "support_then_earliest_else_audience",
+        "selected_time": "2026-11-03T19:30:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": false,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "Requested fixed time 18:00 conflicts. Per user soft preference, prioritize candidates with moderator_available=true (19:30, 19:45, 20:00), then pick the earliest (19:30). Saving as a pending time-change proposal; user confirmation is still required before it becomes effective."
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 5,
+      "provider_latency_ms": 11569.4,
+      "token_usage": {
+        "prompt_tokens": 7409,
+        "completion_tokens": 371,
+        "total_tokens": 7780
+      },
+      "wall_seconds": 11.792,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "support-first.r01.live.input.json": "9ad3e3f636f97e8083c58b284d3c0a69f2f8253c713c14732b85faced5246784",
+        "support-first.r01.live.output.json": "2e0a5bd575280e6d175ad252ed5cc7bdeb8b0638d5bc3ca0f5cf2004c79cffbf",
+        "support-first.r01.live.trace.jsonl": "e22eea2f3ec2cd0ef5baefbcc9d238e57311e7e9d63e2f048d42020e988c8b0b",
+        "support-first.r01.live.db-snapshot.json": "3cb8b3a02b4d0823cd5ef0907b3940054be2e1a6e2043bb364faec6a7a4237de"
+      }
+    },
+    {
+      "case": "audience-first",
+      "iteration": 1,
+      "mode": "live",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_evidence",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T20:00:00+08:00",
+      "actual_selected_time": "2026-11-03T20:00:00+08:00",
+      "preference_matched": true,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "audience_then_earliest",
+        "selected_time": "2026-11-03T20:00:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": false,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "Requested fixed time 18:00 conflicts. Per user soft preference, selected candidate with highest audience_activity_index (95 at 20:00). Saving as pending time-change proposal; user confirmation required before it becomes effective."
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 5,
+      "provider_latency_ms": 13801.9,
+      "token_usage": {
+        "prompt_tokens": 7294,
+        "completion_tokens": 289,
+        "total_tokens": 7583
+      },
+      "wall_seconds": 14.031,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "audience-first.r01.live.input.json": "a383c7f76b147af720ec79636ef47f496102a3d02fc81f65474abfd79da8fea5",
+        "audience-first.r01.live.output.json": "2dad41f4556a0d8e4f3960bdb98f17a1cae2765391908c6acfec907831c1f51c",
+        "audience-first.r01.live.trace.jsonl": "2bb8611bc3d006575550286b9ed6270fefb1792e970ba8184d8cb3057fc8f90b",
+        "audience-first.r01.live.db-snapshot.json": "58ba0953f65ac3b8f0cb31cca9def166aa30594c20acf3d7579015fb9d7a55a6"
+      }
+    },
+    {
+      "case": "audience-changed",
+      "iteration": 1,
+      "mode": "live",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_evidence",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T19:15:00+08:00",
+      "actual_selected_time": "2026-11-03T19:15:00+08:00",
+      "preference_matched": true,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "audience_then_earliest",
+        "selected_time": "2026-11-03T19:15:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": false,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "Requested fixed time 18:00 conflicts with schedule:PREF-BUSY. Per user soft preference, selected candidate with highest audience_activity_index (98 at 19:15). Moderator availability is not a priority per the note. Saving as pending time-change proposal requiring user confirmation."
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 5,
+      "provider_latency_ms": 9816.7,
+      "token_usage": {
+        "prompt_tokens": 7305,
+        "completion_tokens": 299,
+        "total_tokens": 7604
+      },
+      "wall_seconds": 10.062,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "audience-changed.r01.live.input.json": "a383c7f76b147af720ec79636ef47f496102a3d02fc81f65474abfd79da8fea5",
+        "audience-changed.r01.live.output.json": "dc6d0d03696310260a54effc8616fc1a827526c879ee0c55546deda09d0234fd",
+        "audience-changed.r01.live.trace.jsonl": "b92c85c56a6e2cce592a815a0b5e47ed0bc732d748755c07b2040005f8a8b6e1",
+        "audience-changed.r01.live.db-snapshot.json": "aa13e4597d40cabbff3ec4d4bad918f8431a9e127cba1c479d1702d800628bcb"
+      }
+    },
+    {
+      "case": "support-unavailable",
+      "iteration": 1,
+      "mode": "live",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_evidence",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T20:00:00+08:00",
+      "actual_selected_time": "2026-11-03T20:00:00+08:00",
+      "preference_matched": true,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "support_then_earliest_else_audience",
+        "selected_time": "2026-11-03T20:00:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": true,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "Requested fixed time 18:00 conflicts. All candidates have moderator_available=false, so per user fallback preference I select the candidate with highest audience_activity_index (95 at 20:00). Saving as pending time-change proposal; user confirmation required before it becomes effective."
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 5,
+      "provider_latency_ms": 10709.4,
+      "token_usage": {
+        "prompt_tokens": 7378,
+        "completion_tokens": 342,
+        "total_tokens": 7720
+      },
+      "wall_seconds": 10.945,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "support-unavailable.r01.live.input.json": "9ad3e3f636f97e8083c58b284d3c0a69f2f8253c713c14732b85faced5246784",
+        "support-unavailable.r01.live.output.json": "62124eedb16436901d60810aa03ccc8008c8f09ad25508f778bad19c09510889",
+        "support-unavailable.r01.live.trace.jsonl": "e591b8e6a5bc6f09db063d8a003ffc8fb3dbe73dfc1b3acc819f0c9813004e62",
+        "support-unavailable.r01.live.db-snapshot.json": "e76bfe41113970105e1b5398fca96553b257f9d3ae27371d26cc30ade9460404"
+      }
+    },
+    {
+      "case": "support-first",
+      "iteration": 2,
+      "mode": "live",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_evidence",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T19:30:00+08:00",
+      "actual_selected_time": "2026-11-03T19:30:00+08:00",
+      "preference_matched": true,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "support_then_earliest_else_audience",
+        "selected_time": "2026-11-03T19:30:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": false,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "Requested fixed time 18:00 conflicts. Per user soft preference, prioritize candidates with moderator_available=true (客服在线), then pick the earliest among them. Candidates with moderator_available=true are 19:30, 19:45, and 20:00; the earliest is 19:30. Saving as a pending time-change proposal since the original request was fixed and user confirmation is required before it becomes effective."
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 5,
+      "provider_latency_ms": 11699.1,
+      "token_usage": {
+        "prompt_tokens": 7400,
+        "completion_tokens": 438,
+        "total_tokens": 7838
+      },
+      "wall_seconds": 11.933,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "support-first.r02.live.input.json": "9ad3e3f636f97e8083c58b284d3c0a69f2f8253c713c14732b85faced5246784",
+        "support-first.r02.live.output.json": "45d8bf4a31dfa52e027a1941efbb6227121c5f6a4148543cb287eed905ab1eb9",
+        "support-first.r02.live.trace.jsonl": "be129240d1c2d4618a13ee1273e0a38309005af29c7cd63a383af2edb5aa1b86",
+        "support-first.r02.live.db-snapshot.json": "8d87e5befc6b47f5211d612604196b5d29e130e103a6641a6e5cdce49cfba642"
+      }
+    },
+    {
+      "case": "audience-first",
+      "iteration": 2,
+      "mode": "live",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_evidence",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T20:00:00+08:00",
+      "actual_selected_time": "2026-11-03T20:00:00+08:00",
+      "preference_matched": true,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "audience_then_earliest",
+        "selected_time": "2026-11-03T20:00:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": false,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "Requested fixed time 18:00 conflicts with schedule:PREF-BUSY. Per user soft preference, selected candidate with highest audience_activity_index (95) at 20:00. Saving as pending time-change proposal; user confirmation required before it becomes effective."
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 5,
+      "provider_latency_ms": 11142.8,
+      "token_usage": {
+        "prompt_tokens": 7301,
+        "completion_tokens": 291,
+        "total_tokens": 7592
+      },
+      "wall_seconds": 11.367,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "audience-first.r02.live.input.json": "a383c7f76b147af720ec79636ef47f496102a3d02fc81f65474abfd79da8fea5",
+        "audience-first.r02.live.output.json": "2bb5d5fba221e441e81a388543e3bb899683aff88245c7c1a5da8fad11499178",
+        "audience-first.r02.live.trace.jsonl": "d4fa8696c3fdff5f6d603ac0550f367559483b9da3bbb7e1e1f83f29fbddd68a",
+        "audience-first.r02.live.db-snapshot.json": "3faa2b12f50722ef0b1f61fff7eec7fddec0dbf10b24b3ed1169d84e14e5ca9d"
+      }
+    },
+    {
+      "case": "audience-changed",
+      "iteration": 2,
+      "mode": "live",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_evidence",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T19:15:00+08:00",
+      "actual_selected_time": "2026-11-03T19:15:00+08:00",
+      "preference_matched": true,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "audience_then_earliest",
+        "selected_time": "2026-11-03T19:15:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": false,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "Requested fixed time 18:00 conflicts. Per user soft preference, selected candidate with highest audience_activity_index (98 at 19:15). Saving as pending time-change proposal; moderator_available is not a priority per user note."
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 5,
+      "provider_latency_ms": 11118.6,
+      "token_usage": {
+        "prompt_tokens": 7297,
+        "completion_tokens": 287,
+        "total_tokens": 7584
+      },
+      "wall_seconds": 11.35,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "audience-changed.r02.live.input.json": "a383c7f76b147af720ec79636ef47f496102a3d02fc81f65474abfd79da8fea5",
+        "audience-changed.r02.live.output.json": "51bbaafbebe765d4816d48b19560edbffea4bd3c6372ce5b71366c5694297b98",
+        "audience-changed.r02.live.trace.jsonl": "e231776b2bbb377d386e480d72d35a5ebec7a545326ee4c268a66cd75fe33c56",
+        "audience-changed.r02.live.db-snapshot.json": "9a991037bf3b642181eab17dd80b15672babdd205708b8c9569ccee8f6c507c9"
+      }
+    },
+    {
+      "case": "support-unavailable",
+      "iteration": 2,
+      "mode": "live",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_evidence",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T20:00:00+08:00",
+      "actual_selected_time": "2026-11-03T20:00:00+08:00",
+      "preference_matched": true,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "support_then_earliest_else_audience",
+        "selected_time": "2026-11-03T20:00:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": true,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "Requested fixed time 18:00 conflicts. Per user soft preference: no candidate has moderator_available=true, so fallback to highest audience_activity_index. Candidate at 20:00 has index 95 (highest). Saving as PENDING time-change proposal; user confirmation is required before it becomes effective."
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 5,
+      "provider_latency_ms": 12792.7,
+      "token_usage": {
+        "prompt_tokens": 7375,
+        "completion_tokens": 394,
+        "total_tokens": 7769
+      },
+      "wall_seconds": 13.029,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "support-unavailable.r02.live.input.json": "9ad3e3f636f97e8083c58b284d3c0a69f2f8253c713c14732b85faced5246784",
+        "support-unavailable.r02.live.output.json": "fd5d37f7bbcc8c9217bc7bbbceda42eaa17910663858d908f1052aabe28263b8",
+        "support-unavailable.r02.live.trace.jsonl": "a8377d6a2cf247935d876cae15865a6ac72dba74028db5b4836338079657e1f0",
+        "support-unavailable.r02.live.db-snapshot.json": "3e31db10db4782a634a658444a7e2d9561591b183019240e265da189d9ada721"
+      }
+    }
+  ],
+  "earliest_baseline": [
+    {
+      "case": "support-first",
+      "iteration": 1,
+      "mode": "offline",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "offline_has_no_provider_responses",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T19:30:00+08:00",
+      "actual_selected_time": "2026-11-03T19:00:00+08:00",
+      "preference_matched": false,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "support_then_earliest_else_audience",
+        "selected_time": "2026-11-03T19:30:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": false,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "offline process simulation"
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 0,
+      "provider_latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "wall_seconds": 0.228,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "support-first.r01.offline.input.json": "9ad3e3f636f97e8083c58b284d3c0a69f2f8253c713c14732b85faced5246784",
+        "support-first.r01.offline.output.json": "81530990ae4bef832dc79b5ec2067e6b2020e7bfe180bbea8720b9d4e527b44f",
+        "support-first.r01.offline.trace.jsonl": "11ea1a0f90b2c2ff332ee8efb21e18a3ea031e1a82759a69856c0fb591280de3",
+        "support-first.r01.offline.db-snapshot.json": "c3c63195e125333f85bcc03418cb01784f09616c545bfa6e97d48670ec257247"
+      }
+    },
+    {
+      "case": "audience-first",
+      "iteration": 1,
+      "mode": "offline",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "offline_has_no_provider_responses",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T20:00:00+08:00",
+      "actual_selected_time": "2026-11-03T19:00:00+08:00",
+      "preference_matched": false,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "audience_then_earliest",
+        "selected_time": "2026-11-03T20:00:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": false,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "offline process simulation"
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 0,
+      "provider_latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "wall_seconds": 0.222,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "audience-first.r01.offline.input.json": "a383c7f76b147af720ec79636ef47f496102a3d02fc81f65474abfd79da8fea5",
+        "audience-first.r01.offline.output.json": "7d7451973412008167924788849da38f048080286861c2a93ec6b453d861b611",
+        "audience-first.r01.offline.trace.jsonl": "bf8392604a3dca84a4c3bfac984070a7f7359dd0a077786cb7a782d9759769c6",
+        "audience-first.r01.offline.db-snapshot.json": "36add265351535f6952929885d89373349acf91e5d7f3de0f089413035e070d1"
+      }
+    },
+    {
+      "case": "audience-changed",
+      "iteration": 1,
+      "mode": "offline",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "offline_has_no_provider_responses",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T19:15:00+08:00",
+      "actual_selected_time": "2026-11-03T19:00:00+08:00",
+      "preference_matched": false,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "audience_then_earliest",
+        "selected_time": "2026-11-03T19:15:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": false,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "offline process simulation"
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 0,
+      "provider_latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "wall_seconds": 0.223,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "audience-changed.r01.offline.input.json": "a383c7f76b147af720ec79636ef47f496102a3d02fc81f65474abfd79da8fea5",
+        "audience-changed.r01.offline.output.json": "793f8062ecd215db4f54154fda4c211a83bd3c98b5b66c6a4e25a20c4ceeaf18",
+        "audience-changed.r01.offline.trace.jsonl": "f7b62a8afeb0b5e6e83b9b18603e572499e531947f3b6bc8e588140aa697f349",
+        "audience-changed.r01.offline.db-snapshot.json": "a0559e73a39d1e5942ab6341b0a092f5197fc4bba23c03ce9e6936cbce25e186"
+      }
+    },
+    {
+      "case": "support-unavailable",
+      "iteration": 1,
+      "mode": "offline",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "offline_has_no_provider_responses",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T20:00:00+08:00",
+      "actual_selected_time": "2026-11-03T19:00:00+08:00",
+      "preference_matched": false,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "support_then_earliest_else_audience",
+        "selected_time": "2026-11-03T20:00:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": true,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "offline process simulation"
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 0,
+      "provider_latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "wall_seconds": 0.209,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "support-unavailable.r01.offline.input.json": "9ad3e3f636f97e8083c58b284d3c0a69f2f8253c713c14732b85faced5246784",
+        "support-unavailable.r01.offline.output.json": "09628d4dbdf96c472ed86f23ed11c31c7e5fd24f498b20f2b49c8de8c7c7a167",
+        "support-unavailable.r01.offline.trace.jsonl": "3a90524bd489263bea268d5d4d6fed00eb9029ee5a0a1b5f99b67d436978de37",
+        "support-unavailable.r01.offline.db-snapshot.json": "d410e949c46c6f47831e6a6b3e9a15e1ba3b6b09f6d8ebdd263886cd65964f3e"
+      }
+    },
+    {
+      "case": "support-first",
+      "iteration": 2,
+      "mode": "offline",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "offline_has_no_provider_responses",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T19:30:00+08:00",
+      "actual_selected_time": "2026-11-03T19:00:00+08:00",
+      "preference_matched": false,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "support_then_earliest_else_audience",
+        "selected_time": "2026-11-03T19:30:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": false,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "offline process simulation"
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 0,
+      "provider_latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "wall_seconds": 0.219,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "support-first.r02.offline.input.json": "9ad3e3f636f97e8083c58b284d3c0a69f2f8253c713c14732b85faced5246784",
+        "support-first.r02.offline.output.json": "486d7b566466fed85ea6915b89826abfc8ba72d96314a77f26ce632c178503d3",
+        "support-first.r02.offline.trace.jsonl": "5b55f3b0d443827021733ea3e910dd6defe9b260782348e6aa5d002d7bad9c5e",
+        "support-first.r02.offline.db-snapshot.json": "d142b5f7794d16181b03016b94a46610f2d65ea64cadc3955a5233189029e32d"
+      }
+    },
+    {
+      "case": "audience-first",
+      "iteration": 2,
+      "mode": "offline",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "offline_has_no_provider_responses",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T20:00:00+08:00",
+      "actual_selected_time": "2026-11-03T19:00:00+08:00",
+      "preference_matched": false,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "audience_then_earliest",
+        "selected_time": "2026-11-03T20:00:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": false,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "offline process simulation"
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 0,
+      "provider_latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "wall_seconds": 0.22,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "audience-first.r02.offline.input.json": "a383c7f76b147af720ec79636ef47f496102a3d02fc81f65474abfd79da8fea5",
+        "audience-first.r02.offline.output.json": "d9dd3011783fc1428c4e0418850418d83b40a5fcf8f4d89601241de1c19d7333",
+        "audience-first.r02.offline.trace.jsonl": "b031c16be3f390857ca8e4b349a1d35cbb85f77b63646c4d58138b75a93dcfa9",
+        "audience-first.r02.offline.db-snapshot.json": "4998fa8cb4b20e97fd90267f974287bf74432379a1aa985a099a50684c01c754"
+      }
+    },
+    {
+      "case": "audience-changed",
+      "iteration": 2,
+      "mode": "offline",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "offline_has_no_provider_responses",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T19:15:00+08:00",
+      "actual_selected_time": "2026-11-03T19:00:00+08:00",
+      "preference_matched": false,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "audience_then_earliest",
+        "selected_time": "2026-11-03T19:15:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": false,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "offline process simulation"
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 0,
+      "provider_latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "wall_seconds": 0.213,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "audience-changed.r02.offline.input.json": "a383c7f76b147af720ec79636ef47f496102a3d02fc81f65474abfd79da8fea5",
+        "audience-changed.r02.offline.output.json": "583167906dd7b0df6007423d392fc7fc685f95094cb7b05bdf413bbcd5df84d5",
+        "audience-changed.r02.offline.trace.jsonl": "896a66bac5d7f09159f79bd75d0fcddf50a0549e8e090c95723f6dc7d6962c18",
+        "audience-changed.r02.offline.db-snapshot.json": "c2292d610853b9a0b2b7cff4196a75ea14521cf9d36396e9cc2a48cd91544c9d"
+      }
+    },
+    {
+      "case": "support-unavailable",
+      "iteration": 2,
+      "mode": "offline",
+      "safety_passed": true,
+      "safety_checks": [
+        {
+          "name": "cli_completed",
+          "passed": true
+        },
+        {
+          "name": "one_persisted_draft",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "request_identity_preserved",
+          "passed": true
+        },
+        {
+          "name": "original_fixed_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_stays_pending",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_time_was_observed",
+          "passed": true
+        },
+        {
+          "name": "model_explicit_selection_matches_save",
+          "passed": true
+        },
+        {
+          "name": "candidate_count",
+          "passed": true
+        },
+        {
+          "name": "candidate_context_matches_fixture",
+          "passed": true
+        },
+        {
+          "name": "offline_has_no_provider_responses",
+          "passed": true
+        }
+      ],
+      "expected_selected_time": "2026-11-03T20:00:00+08:00",
+      "actual_selected_time": "2026-11-03T19:00:00+08:00",
+      "preference_matched": false,
+      "first_candidate": "2026-11-03T19:00:00+08:00",
+      "rule_oracle": {
+        "policy_annotation": "support_then_earliest_else_audience",
+        "selected_time": "2026-11-03T20:00:00+08:00",
+        "matched_expected": true,
+        "scope": "Selection only; provided a manually labelled structured objective; no language parsing or tool execution."
+      },
+      "preference_gap": {
+        "support_unavailable": true,
+        "source": "Computed by evaluator from observed candidate data; not a model-generated claim."
+      },
+      "model_save_reasons": [
+        "offline process simulation"
+      ],
+      "steps": 5,
+      "exit_code": 0,
+      "provider_calls": 0,
+      "provider_latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "wall_seconds": 0.216,
+      "monetary_cost": null,
+      "cost_note": "Tokens and latency recorded; no unverified currency estimate.",
+      "artifacts": {
+        "support-unavailable.r02.offline.input.json": "9ad3e3f636f97e8083c58b284d3c0a69f2f8253c713c14732b85faced5246784",
+        "support-unavailable.r02.offline.output.json": "03323d6fec58f1fd400736e8e6ee6bdac0b82ab84ad598a418a3d88763796019",
+        "support-unavailable.r02.offline.trace.jsonl": "9be2fc7a4a1af05c0c82423d4248377d094ac0138ee34eeda753ea761d193245",
+        "support-unavailable.r02.offline.db-snapshot.json": "1e2ccdd3d189f4f1c90070a1222860b89848b9a015a9ac676e46ab1368111fe6"
+      }
+    }
+  ]
+}

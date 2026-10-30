@@ -5,6 +5,7 @@ import argparse
 import json
 from pathlib import Path
 import sys
+import sqlite3
 
 from .agent import run_agent, sanitize
 from .models import ModelError, OfflineModel, QwenModel
@@ -31,7 +32,7 @@ def main(argv=None):
         store = DraftStore(args.db)
         tools = ToolSet(args.data_dir, store, fault=args.fault)
         result = run_agent(request, model, tools, args.max_steps)
-    except (OSError, ValueError, ModelError) as exc:
+    except (OSError, ValueError, ModelError, sqlite3.Error) as exc:
         result = {"mode": args.mode, "model": "offline-simulator" if args.mode == "offline" else "qwen3.8-max",
                   "request_id": request.get("request_id") if isinstance(request, dict) else None,
                   "material_id": request.get("material_id") if isinstance(request, dict) else None,
@@ -40,8 +41,9 @@ def main(argv=None):
                   "review_status": None, "risk_reasons": [], "missing_fields": [], "pending_items": [],
                   "draft_status": None, "run_completed": False, "next_step": "correct_configuration_or_input",
                   "task_status": "rejected", "save_status": "not_saved", "draft_id": None,
-                  "stop_reason": sanitize(str(exc)), "steps": 0,
-                  "trace": [{"event": "initialization_rejected", "validation": "rejected", "error": sanitize(str(exc))}]}
+                  "stop_reason": "storage_unavailable" if isinstance(exc, sqlite3.Error) else sanitize(str(exc)), "steps": 0,
+                  "trace": [{"event": "initialization_rejected", "validation": "rejected",
+                             "error": "storage_unavailable" if isinstance(exc, sqlite3.Error) else sanitize(str(exc))}]}
     finally:
         if store:
             store.close()

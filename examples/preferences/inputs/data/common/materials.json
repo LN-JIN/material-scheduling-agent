@@ -1,0 +1,13 @@
+{
+  "materials": [
+    {
+      "material_id": "P01",
+      "title": "原创字幕编辑演示",
+      "text": "展示字幕编辑和片段排序操作。",
+      "playback_duration_seconds": 45,
+      "channel": "main",
+      "version": "preference-fixture-v1",
+      "rights_status": "owned"
+    }
+  ]
+}

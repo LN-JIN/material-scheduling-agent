@@ -1,0 +1,7 @@
+{
+  "request_id": "PREFERENCE-001",
+  "material_id": "P01",
+  "requested_time": "2026-11-03T18:00:00+08:00",
+  "time_requirement": "fixed",
+  "note": "这次活动优先选择互动指数最高的候选；指数相同才选更早的时刻，客服在线与否不作为本次优先条件。这些只是软偏好，原定时间的调整仍需要我确认。"
+}

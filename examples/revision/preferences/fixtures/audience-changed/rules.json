@@ -1,0 +1,10 @@
+{
+  "version": "preference-synthetic-v1",
+  "description": "合成规则与指标，不代表真实平台政策或实际互动预测。",
+  "blocked_terms": ["未经授权转载"],
+  "risk_terms": ["绝对领先"],
+  "required_terms": [],
+  "scheduling_policy": {
+    "posting_interval_minutes": 60
+  }
+}

@@ -1,0 +1,1 @@
+{"event": "initialization_rejected", "validation": "rejected", "error": "rules.json is required; unavailable policy cannot authorize review"}

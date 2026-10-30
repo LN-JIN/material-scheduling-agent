@@ -4,21 +4,28 @@
 
 项目重点是：用户授权范围、保存时发生冲突后的重新决策，以及提交结果未知时的幂等恢复。只生成草稿，不连接真实发布平台；改期或软风险仍待用户确认。
 
-当前证据：58 项独立测试通过；修复后的 14 组场景验收及 15 次关键场景重复实验通过，共记录 145 次真实模型响应。14 组中包含一次零模型调用的重复提交恢复。首轮 10/14 的失败结果与代码快照也保留，详见[评估口径](docs/03-evaluation.md)。
+当前修订已增加真实 SQLite 异常处理、规则配置校验，以及自然语言偏好的候选选择对照。旧版通过记录不代表修订版；当前结果以 [修订评估](docs/03-evaluation.md) 为准。
 
 ## 评审入口
 
-| 要看什么 | 入口 |
+无需密钥，一条命令复跑测试、必验场景、原生数据库故障、偏好基线和证据哈希检查：
+
+```sh
+python -m scripts.verify
+```
+
+| 题面要求 | 当前实现与实际证据 |
 |---|---|
-| 一次完整真实运行 | [输入](examples/live/normal.input.json) · [实际输出](examples/live/normal.output.json) · [Trace](examples/live/normal.trace.jsonl) |
-| 固定时间冲突与待确认 | [输出](examples/live/time-conflict.output.json) · [Trace](examples/live/time-conflict.trace.jsonl) |
-| 保存时新增占用后重新查询 | [输出](examples/live/conflict-on-save.output.json) · [Trace](examples/live/conflict-on-save.trace.jsonl) |
-| 保存响应丢失后核对 | [输出](examples/live/save-response-lost.output.json) · [Trace](examples/live/save-response-lost.trace.jsonl) |
-| 全部真实模型结果 | [报告](examples/live/report.md) · [机器可读断言与哈希](examples/live/summary.json) |
-| 五个关键场景各重复三次 | [报告](examples/live-repeats/report.md) · [逐次断言与哈希](examples/live-repeats/summary.json) |
-| 首轮真实失败与改进 | [原始报告](examples/iterations/v1/report.md) · [复盘](docs/05-retrospective.md) |
-| 独立边界测试 | [测试代码](tests/test_acceptance.py) · [验收报告](docs/acceptance-report.md) |
-| 2–3 小时计划与实际用时 | [PLAN.md](PLAN.md) |
+| 正常、信息不足、规则风险 | [当前14组场景](examples/revision/live/report.md)，每组附输入、输出、Trace、数据库快照 |
+| 动态决策与时段冲突 | [保存冲突后重查](examples/revision/live/conflict-on-save.trace.jsonl) |
+| 硬要求与确认边界 | [固定改期待确认](examples/revision/live/time-conflict.output.json) |
+| 重复提交 | [跨进程恢复同一草稿](examples/revision/live/duplicate-submit.output.json) |
+| 保存失败 | [原生数据库拒写、损坏库及规则缺失复测](examples/revision/failures/results.json) |
+| 模型选择有何价值 | [自然语言偏好与两个基线](examples/revision/preferences/report.md) |
+| 执行上限 | [未完成输出](examples/revision/live/step-limit.output.json) |
+| 学习与改进 | [首轮失败](examples/iterations/v1/report.md)、[自审发现的真实缺陷](examples/iterations/v2/self-review/results.json)、[修订说明](docs/03-evaluation.md) |
+| 工程验证 | [79项测试日志](examples/revision/test-results.txt)、[新增回归测试](tests/test_revision.py) |
+| 原始计划与实际追加工作 | [PLAN.md](PLAN.md) |
 
 ## 环境与安装
 
@@ -133,6 +140,8 @@ docs/       需求、方案、评估、AI 使用、复盘、独立验收报告
 - [05 复盘](docs/05-retrospective.md)
 
 ## 已知限制
+
+Trace 当前在正常运行结束时写入，尚不提供崩溃时逐步持久化或整个 Agent 的断点续跑。
 
 合成规则使用标签和关键词，没有真实版权核验、视频识别或平台审核；单次只处理一个素材，没有批量最优调度。固定时刻冲突后最多搜索未来七天形成提案，返回最多五个候选。待确认草稿也占用本地规划时段，目前没有取消、确认升级或过期释放接口。
 

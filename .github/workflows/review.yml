@@ -1,0 +1,24 @@
+name: Reproducible review
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.10', '3.12']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m scripts.verify --out-dir .runtime/ci
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: review-${{ matrix.os }}-${{ matrix.python }}
+          path: .runtime/ci
+          include-hidden-files: true

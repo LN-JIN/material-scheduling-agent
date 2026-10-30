@@ -1,0 +1,32 @@
+{
+  "requests": [
+    {
+      "request_id": "PREFERENCE-001",
+      "material_id": "P01",
+      "payload_hash": "da143f22d8fcebfbe49ba081cc52378e13f18c0a088d0217397ed6288ed373c5",
+      "payload_json": "{\"material_id\": \"P01\", \"note\": \"这次活动优先选择互动指数最高的候选；指数相同才选更早的时刻，客服在线与否不作为本次优先条件。这些只是软偏好，原定时间的调整仍需要我确认。\", \"request_id\": \"PREFERENCE-001\", \"requested_time\": \"2026-11-03T18:00:00+08:00\", \"time_requirement\": \"fixed\"}"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "draft_3ac7c3f0ff7c4429af11122c98f13476",
+      "request_id": "PREFERENCE-001",
+      "material_id": "P01",
+      "channel": "main",
+      "start_time": "2026-11-03T11:00:00.000000+00:00",
+      "end_time": "2026-11-03T12:00:00.000000+00:00",
+      "confirmation_status": "pending",
+      "result_json": "{\"draft_id\": \"draft_3ac7c3f0ff7c4429af11122c98f13476\", \"request_id\": \"PREFERENCE-001\", \"material_id\": \"P01\", \"original_time\": \"2026-11-03T18:00:00+08:00\", \"suggested_time\": \"2026-11-03T19:00:00+08:00\", \"end_time\": \"2026-11-03T20:00:00+08:00\", \"channel\": \"main\", \"confirmation_status\": \"pending\", \"save_status\": \"saved\", \"review\": {\"status\": \"pass\", \"hard_block\": false, \"missing_fields\": [], \"checks\": [{\"rule_id\": \"required_title\", \"status\": \"pass\", \"severity\": \"missing_information\", \"message\": \"title is required\"}, {\"rule_id\": \"required_text\", \"status\": \"pass\", \"severity\": \"missing_information\", \"message\": \"text is required\"}, {\"rule_id\": \"rights_status_known\", \"status\": \"pass\", \"severity\": \"missing_information\", \"message\": \"material rights_status is owned or licensed\"}, {\"rule_id\": \"blocked_terms_1\", \"status\": \"pass\", \"severity\": \"hard\", \"message\": \"blocked_terms\", \"evidence\": []}, {\"rule_id\": \"risk_terms_1\", \"status\": \"pass\", \"severity\": \"risk\", \"message\": \"risk_terms\", \"evidence\": []}], \"risks\": []}, \"task_status\": \"pending_confirmation\"}"
+    }
+  ],
+  "reservations": [
+    {
+      "reservation_id": "schedule:PREF-BUSY",
+      "material_id": "EXTERNAL",
+      "channel": "main",
+      "start_time": "2026-11-03T10:00:00.000000+00:00",
+      "end_time": "2026-11-03T11:00:00.000000+00:00"
+    }
+  ],
+  "integrity_check": "ok"
+}

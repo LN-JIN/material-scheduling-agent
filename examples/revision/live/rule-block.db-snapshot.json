@@ -1,0 +1,21 @@
+{
+  "requests": [
+    {
+      "request_id": "R003",
+      "material_id": "M03",
+      "payload_hash": "f7ec98c3f2f663822ff355f6e0308629013dc2d67495142a0cab2d5e2da29a75",
+      "payload_json": "{\"material_id\": \"M03\", \"request_id\": \"R003\", \"requested_time\": \"2026-11-01T17:00:00+08:00\", \"time_requirement\": \"fixed\"}"
+    }
+  ],
+  "drafts": [],
+  "reservations": [
+    {
+      "reservation_id": "schedule:S01",
+      "material_id": "EXISTING01",
+      "channel": "main",
+      "start_time": "2026-11-01T10:00:00.000000+00:00",
+      "end_time": "2026-11-01T11:00:00.000000+00:00"
+    }
+  ],
+  "integrity_check": "ok"
+}

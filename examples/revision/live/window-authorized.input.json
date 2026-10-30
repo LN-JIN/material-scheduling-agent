@@ -1,0 +1,9 @@
+{
+  "request_id": "R005",
+  "material_id": "M01",
+  "requested_time": "2026-11-01T18:00:00+08:00",
+  "time_requirement": "window",
+  "allowed_start": "2026-11-01T18:00:00+08:00",
+  "allowed_end": "2026-11-01T21:00:00+08:00",
+  "note": "在已授权范围内优先选择最早的完整可用时段。"
+}

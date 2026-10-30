@@ -1,0 +1,9 @@
+{
+  "slots": [
+    {"start": "2026-11-03T19:00:00+08:00", "channel": "main", "audience_activity_index": 90, "moderator_available": false},
+    {"start": "2026-11-03T19:15:00+08:00", "channel": "main", "audience_activity_index": 60, "moderator_available": false},
+    {"start": "2026-11-03T19:30:00+08:00", "channel": "main", "audience_activity_index": 70, "moderator_available": true},
+    {"start": "2026-11-03T19:45:00+08:00", "channel": "main", "audience_activity_index": 85, "moderator_available": true},
+    {"start": "2026-11-03T20:00:00+08:00", "channel": "main", "audience_activity_index": 95, "moderator_available": true}
+  ]
+}

@@ -1,0 +1,15 @@
+{"case": "normal", "iteration": 1, "passed": true, "actual": "completed", "steps": 5}
+{"case": "missing-information", "iteration": 1, "passed": true, "actual": "needs_input", "steps": 3}
+{"case": "rule-block", "iteration": 1, "passed": true, "actual": "blocked", "steps": 3}
+{"case": "time-conflict", "iteration": 1, "passed": true, "actual": "pending_confirmation", "steps": 5}
+{"case": "window-authorized", "iteration": 1, "passed": true, "actual": "completed", "steps": 5}
+{"case": "save-failure", "iteration": 1, "passed": true, "actual": "failed", "steps": 5}
+{"case": "risk-confirmation", "iteration": 1, "passed": true, "actual": "pending_confirmation", "steps": 5}
+{"case": "conflict-on-save", "iteration": 1, "passed": true, "actual": "pending_confirmation", "steps": 7}
+{"case": "save-response-lost", "iteration": 1, "passed": true, "actual": "completed", "steps": 6}
+{"case": "tool-failure", "iteration": 1, "passed": true, "actual": "completed", "steps": 6}
+{"case": "step-limit", "iteration": 1, "passed": true, "actual": "incomplete", "steps": 2}
+{"case": "changed-slot", "iteration": 1, "passed": true, "actual": "pending_confirmation", "steps": 5}
+{"case": "no-slot", "iteration": 1, "passed": true, "actual": "no_available_slot", "steps": 4}
+{"case": "duplicate-submit", "iteration": 1, "passed": true, "actual": "completed", "steps": 0}
+{"mode": "live", "total_runs": 14, "passed_runs": 14, "provider_calls": 61}
