@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-30T00:51:56.728Z",
+  "endpoint": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+  "requested_model": "qwen3.8-max",
+  "returned_model": "qwen3.8-max",
+  "http_status": 200,
+  "reply": "READY.",
+  "usage": {
+    "prompt_tokens": 17,
+    "total_tokens": 19,
+    "completion_tokens": 2,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 17
+    }
+  },
+  "source": "actual_provider_response",
+  "scope": "Connectivity only, not an agent decision evaluation."
+}

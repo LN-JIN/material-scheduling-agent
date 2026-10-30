@@ -1,0 +1,49 @@
+{
+  "request_id": "R001",
+  "material_id": "M01",
+  "mode": "live",
+  "model": "qwen3.8-max",
+  "review": {
+    "status": "pass",
+    "hard_block": false,
+    "missing_fields": [],
+    "checks": [
+      {
+        "rule_id": "required_title",
+        "status": "pass",
+        "severity": "missing_information",
+        "message": "title is required"
+      },
+      {
+        "rule_id": "required_text",
+        "status": "pass",
+        "severity": "missing_information",
+        "message": "text is required"
+      },
+      {
+        "rule_id": "blocked_terms_1",
+        "status": "pass",
+        "severity": "hard",
+        "message": "blocked_terms",
+        "evidence": []
+      },
+      {
+        "rule_id": "risk_terms_1",
+        "status": "pass",
+        "severity": "risk",
+        "message": "risk_terms",
+        "evidence": []
+      }
+    ],
+    "risks": []
+  },
+  "risks": [],
+  "original_time": "2026-11-01T17:00:00+08:00",
+  "suggested_time": "2026-11-01T17:00:00+08:00",
+  "confirmation_status": "not_required",
+  "save_status": "saved",
+  "draft_id": "draft_a6c956046ef04a8199453237887a5c01",
+  "task_status": "completed",
+  "steps": 5,
+  "stop_reason": "model_finished_after_saved_draft"
+}

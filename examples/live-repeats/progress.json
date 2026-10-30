@@ -1,0 +1,1289 @@
+{
+  "run_id": "20261030T011613Z-d3322d",
+  "completed": [
+    {
+      "case": "time-conflict",
+      "iteration": 1,
+      "mode": "live",
+      "expected": "pending_confirmation",
+      "actual": "pending_confirmation",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "confirmation_boundary",
+          "passed": true
+        },
+        {
+          "name": "changed_availability_reflected",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_never_auto_confirmed",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 9.243,
+      "exit_code": 0,
+      "steps": 5,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 5,
+      "guard_rejections": 0,
+      "artifacts": {
+        "time-conflict.r01.input.json": "549a561244606d01d9704bcb8f39c827a5ff1dcd4b07063d8930733c6694f012",
+        "time-conflict.r01.output.json": "590267993a37e2909bd30a9cb9761edf3a7dc77be629252d133001b03ecfb924",
+        "time-conflict.r01.trace.jsonl": "abcce3f05737a7c3fe1fd6a20464adb3bee0b18e46cfc0c7d3c2507640abd37c",
+        "time-conflict.r01.db-snapshot.json": "0028b137f33b7d5f2a6ceedafc4717229822308f4ce0d3dd024237d8c3a48223"
+      }
+    },
+    {
+      "case": "window-authorized",
+      "iteration": 1,
+      "mode": "live",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "confirmation_boundary",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 11.655,
+      "exit_code": 0,
+      "steps": 5,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 5,
+      "guard_rejections": 0,
+      "artifacts": {
+        "window-authorized.r01.input.json": "96ee3196a4e235ee0942f139bad08f1bcdfa8133feb5eb714419ddc4ecec3d3b",
+        "window-authorized.r01.output.json": "20367e9bfe5752e4e8abfca864a5d30adba1e6e57cd5f45fcb60e3d5f8c9def7",
+        "window-authorized.r01.trace.jsonl": "95a4fa6caf1c375b13261cd8364839561296590ee9ff46f7b334aa182810be4e",
+        "window-authorized.r01.db-snapshot.json": "1785bee4d4c78f0a38257a9b1508848fa537e5c410d7e6987304b47bc40a82ae"
+      }
+    },
+    {
+      "case": "conflict-on-save",
+      "iteration": 1,
+      "mode": "live",
+      "expected": "pending_confirmation",
+      "actual": "pending_confirmation",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "confirmation_boundary",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_never_auto_confirmed",
+          "passed": true
+        },
+        {
+          "name": "observed_transactional_conflict",
+          "passed": true
+        },
+        {
+          "name": "model_requeries_after_conflict",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 13.795,
+      "exit_code": 0,
+      "steps": 7,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 7,
+      "guard_rejections": 0,
+      "artifacts": {
+        "conflict-on-save.r01.input.json": "84eb378e76f84c306cd3812dde70a3a9993b8dc67f112534460087d5d274bdb7",
+        "conflict-on-save.r01.output.json": "12969ac5e2963d87c978a58d6cc9707dbe8f31696cce163f3c189ac16db3043c",
+        "conflict-on-save.r01.trace.jsonl": "e9b523f7b338f6ec1bd40675a49cc85971965837a6008c77fa1f7de05c6d495f",
+        "conflict-on-save.r01.db-snapshot.json": "be58d7008ea968b654c279022d7ebf526ec82125b3122f34bebeb575a5f0255b"
+      }
+    },
+    {
+      "case": "save-response-lost",
+      "iteration": 1,
+      "mode": "live",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_never_auto_confirmed",
+          "passed": true
+        },
+        {
+          "name": "observed_unknown_save_outcome",
+          "passed": true
+        },
+        {
+          "name": "model_reconciles_unknown_save",
+          "passed": true
+        },
+        {
+          "name": "retry_is_idempotent",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 12.395,
+      "exit_code": 0,
+      "steps": 6,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 6,
+      "guard_rejections": 0,
+      "artifacts": {
+        "save-response-lost.r01.input.json": "5c185498e42e787349c6a39672749b808d8ab623e1178c4aeda6882b70d842ee",
+        "save-response-lost.r01.output.json": "843ab5ce5d08a7ec20453a85a80c0ee80e0017d6d22265a5751b620c019cc6a1",
+        "save-response-lost.r01.trace.jsonl": "047664fb55ae20ee3b0c2ba2c1bfd56a374be105e4f4b0cde58b4145ab4744b9",
+        "save-response-lost.r01.db-snapshot.json": "979a8301a4753902fde9e283df77d2ef05c1b05a83d1800869a1ef73cb24c9e7"
+      }
+    },
+    {
+      "case": "changed-slot",
+      "iteration": 1,
+      "mode": "live",
+      "expected": "pending_confirmation",
+      "actual": "pending_confirmation",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "confirmation_boundary",
+          "passed": true
+        },
+        {
+          "name": "changed_availability_reflected",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_never_auto_confirmed",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 9.006,
+      "exit_code": 0,
+      "steps": 5,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 5,
+      "guard_rejections": 0,
+      "artifacts": {
+        "changed-slot.r01.input.json": "549a561244606d01d9704bcb8f39c827a5ff1dcd4b07063d8930733c6694f012",
+        "changed-slot.r01.output.json": "2c67ce11bcc1e62d3853e7fb6a7ee1fb210938928cc8efc651659018bda488f7",
+        "changed-slot.r01.trace.jsonl": "cf7768f30e9f92ae07fce08eaf665f0ce3b7d66e3f7a4fcfe19c11e51afae170",
+        "changed-slot.r01.db-snapshot.json": "e5f5d0d153b3f5073a6b31a4c264a1cb82549989780354469ee99f09f48aad02"
+      }
+    },
+    {
+      "case": "time-conflict",
+      "iteration": 2,
+      "mode": "live",
+      "expected": "pending_confirmation",
+      "actual": "pending_confirmation",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "confirmation_boundary",
+          "passed": true
+        },
+        {
+          "name": "changed_availability_reflected",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_never_auto_confirmed",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 8.951,
+      "exit_code": 0,
+      "steps": 5,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 5,
+      "guard_rejections": 0,
+      "artifacts": {
+        "time-conflict.r02.input.json": "549a561244606d01d9704bcb8f39c827a5ff1dcd4b07063d8930733c6694f012",
+        "time-conflict.r02.output.json": "d4df20999f1267e8b076008d4e4fe134c67dfa5596a820fa156b89ae3ea914e0",
+        "time-conflict.r02.trace.jsonl": "84d6feced6d6f973a024fec974813820f76e0200cbae93ed5aa028893c0f445b",
+        "time-conflict.r02.db-snapshot.json": "13f37330f324140ed00af5776dcc9efb6b7a429cfd2304bb7498f4b45441a6f9"
+      }
+    },
+    {
+      "case": "window-authorized",
+      "iteration": 2,
+      "mode": "live",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "confirmation_boundary",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 10.176,
+      "exit_code": 0,
+      "steps": 5,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 5,
+      "guard_rejections": 0,
+      "artifacts": {
+        "window-authorized.r02.input.json": "96ee3196a4e235ee0942f139bad08f1bcdfa8133feb5eb714419ddc4ecec3d3b",
+        "window-authorized.r02.output.json": "b5796fadd5059d96464af0709f8dcf561bc16dc95c6314dd37e14f54d409cfb3",
+        "window-authorized.r02.trace.jsonl": "87bb5fae40ace64e40b12e34f1928118636f25c78a495562ea93a6f0d3875886",
+        "window-authorized.r02.db-snapshot.json": "9957898537f83c04be648c99f370201c1a0105bbc4b0aa4a7a273ff14d5d0fdb"
+      }
+    },
+    {
+      "case": "conflict-on-save",
+      "iteration": 2,
+      "mode": "live",
+      "expected": "pending_confirmation",
+      "actual": "pending_confirmation",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "confirmation_boundary",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_never_auto_confirmed",
+          "passed": true
+        },
+        {
+          "name": "observed_transactional_conflict",
+          "passed": true
+        },
+        {
+          "name": "model_requeries_after_conflict",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 13.478,
+      "exit_code": 0,
+      "steps": 7,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 7,
+      "guard_rejections": 0,
+      "artifacts": {
+        "conflict-on-save.r02.input.json": "84eb378e76f84c306cd3812dde70a3a9993b8dc67f112534460087d5d274bdb7",
+        "conflict-on-save.r02.output.json": "177665cdf1cca07846392413349fcc1edfee727fbe0dd89e0af49fd8bfbffd7b",
+        "conflict-on-save.r02.trace.jsonl": "8a55219a6c93b5ea8f183c735abe170b7137e080260724d9046e4e52095714e4",
+        "conflict-on-save.r02.db-snapshot.json": "58aee1f98997bcc3ccc2134e4bd0a263ee51315abfb0e2704b461649acc1dc2a"
+      }
+    },
+    {
+      "case": "save-response-lost",
+      "iteration": 2,
+      "mode": "live",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_never_auto_confirmed",
+          "passed": true
+        },
+        {
+          "name": "observed_unknown_save_outcome",
+          "passed": true
+        },
+        {
+          "name": "model_reconciles_unknown_save",
+          "passed": true
+        },
+        {
+          "name": "retry_is_idempotent",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 11.741,
+      "exit_code": 0,
+      "steps": 6,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 6,
+      "guard_rejections": 0,
+      "artifacts": {
+        "save-response-lost.r02.input.json": "5c185498e42e787349c6a39672749b808d8ab623e1178c4aeda6882b70d842ee",
+        "save-response-lost.r02.output.json": "043d9de12c1759d431426ea577e831117247c221b9fc81fa5769d5adbd8e57b0",
+        "save-response-lost.r02.trace.jsonl": "680f097bb5a2bdd32ffe5158c2d55777dea9723147c0b718062bd71c3884317d",
+        "save-response-lost.r02.db-snapshot.json": "3d995e0247b7dd7364b555ae9666507977760a25073187bc368c20f2fa030450"
+      }
+    },
+    {
+      "case": "changed-slot",
+      "iteration": 2,
+      "mode": "live",
+      "expected": "pending_confirmation",
+      "actual": "pending_confirmation",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "confirmation_boundary",
+          "passed": true
+        },
+        {
+          "name": "changed_availability_reflected",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_never_auto_confirmed",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 9.758,
+      "exit_code": 0,
+      "steps": 5,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 5,
+      "guard_rejections": 0,
+      "artifacts": {
+        "changed-slot.r02.input.json": "549a561244606d01d9704bcb8f39c827a5ff1dcd4b07063d8930733c6694f012",
+        "changed-slot.r02.output.json": "ce0614791840cd5f44416f643b77b7e3ad14b77cf27688d148beb13f36164982",
+        "changed-slot.r02.trace.jsonl": "69a6b93942e8755dde213aaa00924f1a62751089e070712b6e7e54aaf2dff1ad",
+        "changed-slot.r02.db-snapshot.json": "3f54425e1aead3ca27287c4265f9a5c31501e7dd3485fddc77671a6cf63965aa"
+      }
+    },
+    {
+      "case": "time-conflict",
+      "iteration": 3,
+      "mode": "live",
+      "expected": "pending_confirmation",
+      "actual": "pending_confirmation",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "confirmation_boundary",
+          "passed": true
+        },
+        {
+          "name": "changed_availability_reflected",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_never_auto_confirmed",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 9.642,
+      "exit_code": 0,
+      "steps": 5,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 5,
+      "guard_rejections": 0,
+      "artifacts": {
+        "time-conflict.r03.input.json": "549a561244606d01d9704bcb8f39c827a5ff1dcd4b07063d8930733c6694f012",
+        "time-conflict.r03.output.json": "597527d1c2237d6146d5a88848861b3c2eca707d62706b67bdfc4bb6a5b20322",
+        "time-conflict.r03.trace.jsonl": "6e87ff6ec7e44fc71fed7fa51a94a63e3bbf6b96f30bb09b7441c0c57cab2216",
+        "time-conflict.r03.db-snapshot.json": "849acc320c27dde781f65321143b96e28133d34fbbbe4cc9646c5b176e1d0422"
+      }
+    },
+    {
+      "case": "window-authorized",
+      "iteration": 3,
+      "mode": "live",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "confirmation_boundary",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 12.072,
+      "exit_code": 0,
+      "steps": 5,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 5,
+      "guard_rejections": 0,
+      "artifacts": {
+        "window-authorized.r03.input.json": "96ee3196a4e235ee0942f139bad08f1bcdfa8133feb5eb714419ddc4ecec3d3b",
+        "window-authorized.r03.output.json": "c041bc41d72228625e0a1a1aee7f9725296de7895736f7ba1447aaf040db1590",
+        "window-authorized.r03.trace.jsonl": "b0338f81d6d5ed4c7613e2d1e2fdab8a7eea3be1c683aaea5cd8e843287d8fd9",
+        "window-authorized.r03.db-snapshot.json": "dd1486f863a9d649f3c1c10cbae7b382b8aac83dfda2345614a8ee0e3ca78389"
+      }
+    },
+    {
+      "case": "conflict-on-save",
+      "iteration": 3,
+      "mode": "live",
+      "expected": "pending_confirmation",
+      "actual": "pending_confirmation",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "confirmation_boundary",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_never_auto_confirmed",
+          "passed": true
+        },
+        {
+          "name": "observed_transactional_conflict",
+          "passed": true
+        },
+        {
+          "name": "model_requeries_after_conflict",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 13.858,
+      "exit_code": 0,
+      "steps": 7,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 7,
+      "guard_rejections": 0,
+      "artifacts": {
+        "conflict-on-save.r03.input.json": "84eb378e76f84c306cd3812dde70a3a9993b8dc67f112534460087d5d274bdb7",
+        "conflict-on-save.r03.output.json": "08ed471bb447c4541b339d7383c56440a518c04a96b9b109271f63d2fae8b5ca",
+        "conflict-on-save.r03.trace.jsonl": "b222051361689e163a3c3cda6f4130ef83e5f44d3c90a3722d7c53bb8b71290d",
+        "conflict-on-save.r03.db-snapshot.json": "ed695ba69729dfc46ccd038abb57b4f16f8aee3b146b462ac6bf34f66d154307"
+      }
+    },
+    {
+      "case": "save-response-lost",
+      "iteration": 3,
+      "mode": "live",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_never_auto_confirmed",
+          "passed": true
+        },
+        {
+          "name": "observed_unknown_save_outcome",
+          "passed": true
+        },
+        {
+          "name": "model_reconciles_unknown_save",
+          "passed": true
+        },
+        {
+          "name": "retry_is_idempotent",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 12.69,
+      "exit_code": 0,
+      "steps": 6,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 6,
+      "guard_rejections": 0,
+      "artifacts": {
+        "save-response-lost.r03.input.json": "5c185498e42e787349c6a39672749b808d8ab623e1178c4aeda6882b70d842ee",
+        "save-response-lost.r03.output.json": "878e2320c5a05750bf05e8b384007f3da4b32c959bc583d07e5600aac6761d66",
+        "save-response-lost.r03.trace.jsonl": "1ae3230fadbeb030ad8d21fa3c5260bcdf44ee746de76d9e8d364458b9caf6cd",
+        "save-response-lost.r03.db-snapshot.json": "2787cbc2e2fb55a3ff7b9aa69ed9917ae427897a6a52c617b6d6c37b225be201"
+      }
+    },
+    {
+      "case": "changed-slot",
+      "iteration": 3,
+      "mode": "live",
+      "expected": "pending_confirmation",
+      "actual": "pending_confirmation",
+      "passed": true,
+      "checks": [
+        {
+          "name": "expected_task_status",
+          "passed": true
+        },
+        {
+          "name": "expected_database_draft_count",
+          "passed": true
+        },
+        {
+          "name": "sqlite_integrity",
+          "passed": true
+        },
+        {
+          "name": "original_time_preserved",
+          "passed": true
+        },
+        {
+          "name": "immutable_request_identity",
+          "passed": true
+        },
+        {
+          "name": "decision_budget",
+          "passed": true
+        },
+        {
+          "name": "mode_explicit",
+          "passed": true
+        },
+        {
+          "name": "saved_status_and_database_agree",
+          "passed": true
+        },
+        {
+          "name": "model_explicitly_selects_saved_time",
+          "passed": true
+        },
+        {
+          "name": "confirmation_boundary",
+          "passed": true
+        },
+        {
+          "name": "changed_availability_reflected",
+          "passed": true
+        },
+        {
+          "name": "fixed_change_never_auto_confirmed",
+          "passed": true
+        },
+        {
+          "name": "actual_provider_model_evidence",
+          "passed": true
+        },
+        {
+          "name": "documented_cli_exit_status",
+          "passed": true
+        }
+      ],
+      "elapsed_seconds": 9.96,
+      "exit_code": 0,
+      "steps": 5,
+      "draft_count": 1,
+      "action_path": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "provider_calls": 5,
+      "guard_rejections": 0,
+      "artifacts": {
+        "changed-slot.r03.input.json": "549a561244606d01d9704bcb8f39c827a5ff1dcd4b07063d8930733c6694f012",
+        "changed-slot.r03.output.json": "c6f6d777e2c56bd90d7e0eb6c0f4db9572ae762645b4845f28c0d9d64a71b9fc",
+        "changed-slot.r03.trace.jsonl": "5b6c2e6f0a5c6fdfabebef0622ecba393a136e580509bb83b13f09522f2735e0",
+        "changed-slot.r03.db-snapshot.json": "faa94ba0e7a1a6c7373310b2bb7e2cde313bce05919898f05854b222fec5cfee"
+      }
+    }
+  ]
+}

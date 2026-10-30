@@ -1,0 +1,1459 @@
+{
+  "checked_at": "2026-10-30T01:59:40.336444+00:00",
+  "checks": [
+    {
+      "name": "required:README.md",
+      "passed": true
+    },
+    {
+      "name": "required:PLAN.md",
+      "passed": true
+    },
+    {
+      "name": "required:requirements.txt",
+      "passed": true
+    },
+    {
+      "name": "required:.env.example",
+      "passed": true
+    },
+    {
+      "name": "required:.gitignore",
+      "passed": true
+    },
+    {
+      "name": "required:src/main.py",
+      "passed": true
+    },
+    {
+      "name": "required:src/agent.py",
+      "passed": true
+    },
+    {
+      "name": "required:src/models.py",
+      "passed": true
+    },
+    {
+      "name": "required:src/tools.py",
+      "passed": true
+    },
+    {
+      "name": "required:src/store.py",
+      "passed": true
+    },
+    {
+      "name": "required:tests/test_acceptance.py",
+      "passed": true
+    },
+    {
+      "name": "required:data/materials.json",
+      "passed": true
+    },
+    {
+      "name": "required:data/rules.json",
+      "passed": true
+    },
+    {
+      "name": "required:data/schedules.json",
+      "passed": true
+    },
+    {
+      "name": "required:docs/01-requirements.md",
+      "passed": true
+    },
+    {
+      "name": "required:docs/02-solution.md",
+      "passed": true
+    },
+    {
+      "name": "required:docs/03-evaluation.md",
+      "passed": true
+    },
+    {
+      "name": "required:docs/04-ai-usage.md",
+      "passed": true
+    },
+    {
+      "name": "required:docs/05-retrospective.md",
+      "passed": true
+    },
+    {
+      "name": "required:docs/acceptance-report.md",
+      "passed": true
+    },
+    {
+      "name": "required:examples/test-results.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest:examples/live",
+      "passed": true
+    },
+    {
+      "name": "case_count:examples/live",
+      "passed": true
+    },
+    {
+      "name": "reported_results:examples/live",
+      "passed": true
+    },
+    {
+      "name": "expected_experiment_outcome:examples/live",
+      "passed": true
+    },
+    {
+      "name": "source_stable:examples/live",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live:src/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live:src/agent.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live:src/domain.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live:src/main.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live:src/models.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live:src/store.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live:src/tools.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live:data/materials.json",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live:data/rules.json",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live:data/schedules.json",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live:scripts/evaluate.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:normal.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:normal.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:normal.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:normal.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:normal.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:missing-information.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:missing-information.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:missing-information.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:missing-information.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:missing-information.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:rule-block.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:rule-block.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:rule-block.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:rule-block.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:rule-block.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:time-conflict.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:time-conflict.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:time-conflict.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:time-conflict.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:time-conflict.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:window-authorized.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:window-authorized.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:window-authorized.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:window-authorized.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:window-authorized.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:save-failure.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:save-failure.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:save-failure.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:save-failure.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:save-failure.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:risk-confirmation.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:risk-confirmation.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:risk-confirmation.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:risk-confirmation.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:risk-confirmation.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:conflict-on-save.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:conflict-on-save.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:conflict-on-save.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:conflict-on-save.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:conflict-on-save.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:save-response-lost.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:save-response-lost.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:save-response-lost.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:save-response-lost.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:save-response-lost.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:tool-failure.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:tool-failure.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:tool-failure.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:tool-failure.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:tool-failure.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:step-limit.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:step-limit.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:step-limit.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:step-limit.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:step-limit.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:changed-slot.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:changed-slot.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:changed-slot.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:changed-slot.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:changed-slot.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:no-slot.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:no-slot.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:no-slot.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:no-slot.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:no-slot.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:duplicate-submit.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:duplicate-submit.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:duplicate-submit.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live:duplicate-submit.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live:duplicate-submit.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "actual_provider_call_count:examples/live",
+      "passed": true
+    },
+    {
+      "name": "manifest:examples/live-repeats",
+      "passed": true
+    },
+    {
+      "name": "case_count:examples/live-repeats",
+      "passed": true
+    },
+    {
+      "name": "reported_results:examples/live-repeats",
+      "passed": true
+    },
+    {
+      "name": "expected_experiment_outcome:examples/live-repeats",
+      "passed": true
+    },
+    {
+      "name": "source_stable:examples/live-repeats",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live-repeats:src/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live-repeats:src/agent.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live-repeats:src/domain.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live-repeats:src/main.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live-repeats:src/models.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live-repeats:src/store.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live-repeats:src/tools.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live-repeats:data/materials.json",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live-repeats:data/rules.json",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live-repeats:data/schedules.json",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/live-repeats:scripts/evaluate.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:time-conflict.r01.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:time-conflict.r01.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:time-conflict.r01.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:time-conflict.r01.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:time-conflict.r01.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:window-authorized.r01.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:window-authorized.r01.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:window-authorized.r01.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:window-authorized.r01.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:window-authorized.r01.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:conflict-on-save.r01.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:conflict-on-save.r01.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:conflict-on-save.r01.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:conflict-on-save.r01.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:conflict-on-save.r01.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:save-response-lost.r01.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:save-response-lost.r01.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:save-response-lost.r01.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:save-response-lost.r01.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:save-response-lost.r01.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:changed-slot.r01.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:changed-slot.r01.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:changed-slot.r01.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:changed-slot.r01.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:changed-slot.r01.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:time-conflict.r02.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:time-conflict.r02.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:time-conflict.r02.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:time-conflict.r02.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:time-conflict.r02.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:window-authorized.r02.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:window-authorized.r02.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:window-authorized.r02.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:window-authorized.r02.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:window-authorized.r02.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:conflict-on-save.r02.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:conflict-on-save.r02.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:conflict-on-save.r02.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:conflict-on-save.r02.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:conflict-on-save.r02.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:save-response-lost.r02.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:save-response-lost.r02.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:save-response-lost.r02.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:save-response-lost.r02.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:save-response-lost.r02.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:changed-slot.r02.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:changed-slot.r02.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:changed-slot.r02.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:changed-slot.r02.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:changed-slot.r02.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:time-conflict.r03.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:time-conflict.r03.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:time-conflict.r03.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:time-conflict.r03.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:time-conflict.r03.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:window-authorized.r03.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:window-authorized.r03.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:window-authorized.r03.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:window-authorized.r03.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:window-authorized.r03.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:conflict-on-save.r03.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:conflict-on-save.r03.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:conflict-on-save.r03.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:conflict-on-save.r03.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:conflict-on-save.r03.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:save-response-lost.r03.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:save-response-lost.r03.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:save-response-lost.r03.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:save-response-lost.r03.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:save-response-lost.r03.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:changed-slot.r03.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:changed-slot.r03.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:changed-slot.r03.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/live-repeats:changed-slot.r03.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/live-repeats:changed-slot.r03.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "actual_provider_call_count:examples/live-repeats",
+      "passed": true
+    },
+    {
+      "name": "manifest:examples/offline",
+      "passed": true
+    },
+    {
+      "name": "case_count:examples/offline",
+      "passed": true
+    },
+    {
+      "name": "reported_results:examples/offline",
+      "passed": true
+    },
+    {
+      "name": "expected_experiment_outcome:examples/offline",
+      "passed": true
+    },
+    {
+      "name": "source_stable:examples/offline",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/offline:src/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/offline:src/agent.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/offline:src/domain.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/offline:src/main.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/offline:src/models.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/offline:src/store.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/offline:src/tools.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/offline:data/materials.json",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/offline:data/rules.json",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/offline:data/schedules.json",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/offline:scripts/evaluate.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:normal.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:normal.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:normal.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:normal.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:missing-information.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:missing-information.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:missing-information.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:missing-information.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:rule-block.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:rule-block.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:rule-block.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:rule-block.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:time-conflict.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:time-conflict.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:time-conflict.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:time-conflict.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:window-authorized.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:window-authorized.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:window-authorized.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:window-authorized.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:save-failure.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:save-failure.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:save-failure.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:save-failure.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:risk-confirmation.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:risk-confirmation.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:risk-confirmation.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:risk-confirmation.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:conflict-on-save.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:conflict-on-save.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:conflict-on-save.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:conflict-on-save.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:save-response-lost.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:save-response-lost.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:save-response-lost.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:save-response-lost.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:tool-failure.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:tool-failure.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:tool-failure.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:tool-failure.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:step-limit.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:step-limit.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:step-limit.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:step-limit.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:changed-slot.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:changed-slot.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:changed-slot.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:changed-slot.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:no-slot.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:no-slot.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:no-slot.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:no-slot.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:duplicate-submit.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:duplicate-submit.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:duplicate-submit.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/offline:duplicate-submit.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "actual_provider_call_count:examples/offline",
+      "passed": true
+    },
+    {
+      "name": "manifest:examples/iterations/v1",
+      "passed": true
+    },
+    {
+      "name": "case_count:examples/iterations/v1",
+      "passed": true
+    },
+    {
+      "name": "reported_results:examples/iterations/v1",
+      "passed": true
+    },
+    {
+      "name": "expected_experiment_outcome:examples/iterations/v1",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/iterations/v1:src/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/iterations/v1:src/agent.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/iterations/v1:src/domain.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/iterations/v1:src/main.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/iterations/v1:src/models.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/iterations/v1:src/store.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/iterations/v1:src/tools.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/iterations/v1:data/materials.json",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/iterations/v1:data/rules.json",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/iterations/v1:data/schedules.json",
+      "passed": true
+    },
+    {
+      "name": "source_hash:examples/iterations/v1:scripts/evaluate.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:normal.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:normal.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:normal.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:normal.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:normal.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:missing-information.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:missing-information.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:missing-information.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:missing-information.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:missing-information.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:rule-block.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:rule-block.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:rule-block.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:rule-block.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:rule-block.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:time-conflict.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:time-conflict.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:time-conflict.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:time-conflict.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:time-conflict.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:window-authorized.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:window-authorized.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:window-authorized.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:window-authorized.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:window-authorized.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:save-failure.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:save-failure.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:save-failure.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:save-failure.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:save-failure.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:risk-confirmation.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:risk-confirmation.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:risk-confirmation.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:risk-confirmation.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:risk-confirmation.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:conflict-on-save.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:conflict-on-save.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:conflict-on-save.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:conflict-on-save.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:conflict-on-save.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:save-response-lost.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:save-response-lost.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:save-response-lost.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:save-response-lost.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:save-response-lost.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:tool-failure.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:tool-failure.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:tool-failure.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:tool-failure.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:tool-failure.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:step-limit.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:step-limit.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:step-limit.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:step-limit.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:step-limit.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:changed-slot.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:changed-slot.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:changed-slot.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:changed-slot.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:changed-slot.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:no-slot.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:no-slot.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:no-slot.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:no-slot.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:no-slot.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:duplicate-submit.input.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:duplicate-submit.output.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:duplicate-submit.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:examples/iterations/v1:duplicate-submit.db-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "provider_model:examples/iterations/v1:duplicate-submit.trace.jsonl",
+      "passed": true
+    },
+    {
+      "name": "actual_provider_call_count:examples/iterations/v1",
+      "passed": true
+    },
+    {
+      "name": "local_markdown_links",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no_credentials_or_private_keys_in_deliverable",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "actual_unittest_output",
+      "passed": true
+    }
+  ],
+  "total_checks": 362,
+  "passed_checks": 362,
+  "passed": true,
+  "scope": "File completeness, evidence integrity, provider labels and local references; independent behavioral review is in docs/acceptance-report.md."
+}

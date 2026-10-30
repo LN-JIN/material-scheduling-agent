@@ -1,0 +1,35 @@
+{
+  "requests": [
+    {
+      "request_id": "R013",
+      "material_id": "M01",
+      "payload_hash": "a253882441ddc1bb277d23a0f7c862d600fd1b9c8d14067d3a0486248884316c",
+      "payload_json": "{\"allowed_end\": \"2026-11-01T21:00:00+08:00\", \"allowed_start\": \"2026-11-01T18:00:00+08:00\", \"material_id\": \"M01\", \"request_id\": \"R013\", \"requested_time\": \"2026-11-01T18:00:00+08:00\", \"time_requirement\": \"window\"}"
+    }
+  ],
+  "drafts": [],
+  "reservations": [
+    {
+      "reservation_id": "schedule:S01",
+      "material_id": "EXISTING01",
+      "channel": "main",
+      "start_time": "2026-11-01T10:00:00.000000+00:00",
+      "end_time": "2026-11-01T11:00:00.000000+00:00"
+    },
+    {
+      "reservation_id": "schedule:S19",
+      "material_id": "EXTERNAL19",
+      "channel": "main",
+      "start_time": "2026-11-01T11:00:00.000000+00:00",
+      "end_time": "2026-11-01T12:00:00.000000+00:00"
+    },
+    {
+      "reservation_id": "schedule:S20",
+      "material_id": "EXTERNAL20",
+      "channel": "main",
+      "start_time": "2026-11-01T12:00:00.000000+00:00",
+      "end_time": "2026-11-01T13:00:00.000000+00:00"
+    }
+  ],
+  "integrity_check": "ok"
+}

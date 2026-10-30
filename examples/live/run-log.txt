@@ -1,0 +1,69 @@
+$ python -m src.main --input examples/live/normal.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/normal.r01.sqlite --output examples/live/normal.output.json --trace examples/live/normal.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=10.751s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_04e562c95c444ca4b460bee305cf7fa9", "steps": 5}
+
+
+$ python -m src.main --input examples/live/missing-information.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/missing-information.r01.sqlite --output examples/live/missing-information.output.json --trace examples/live/missing-information.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=5.82s
+{"task_status": "needs_input", "save_status": "not_saved", "draft_id": null, "steps": 3}
+
+
+$ python -m src.main --input examples/live/rule-block.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/rule-block.r01.sqlite --output examples/live/rule-block.output.json --trace examples/live/rule-block.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=5.601s
+{"task_status": "blocked", "save_status": "not_saved", "draft_id": null, "steps": 3}
+
+
+$ python -m src.main --input examples/live/time-conflict.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/time-conflict.r01.sqlite --output examples/live/time-conflict.output.json --trace examples/live/time-conflict.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=11.652s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_ff3f16e02c9f40b3b7675d7295292bd6", "steps": 5}
+
+
+$ python -m src.main --input examples/live/window-authorized.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/window-authorized.r01.sqlite --output examples/live/window-authorized.output.json --trace examples/live/window-authorized.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=10.509s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_fffe6d5e16fc4983870eb0c5bc056552", "steps": 5}
+
+
+$ python -m src.main --input examples/live/save-failure.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/save-failure.r01.sqlite --output examples/live/save-failure.output.json --trace examples/live/save-failure.trace.jsonl --data-dir data --max-steps 12 --fault save_fail_permanent
+exit=0, elapsed=10.409s
+{"task_status": "failed", "save_status": "failed", "draft_id": null, "steps": 5}
+
+
+$ python -m src.main --input examples/live/risk-confirmation.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/risk-confirmation.r01.sqlite --output examples/live/risk-confirmation.output.json --trace examples/live/risk-confirmation.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=11.74s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_0da13711a46c44c6ae0713239ebcb737", "steps": 5}
+
+
+$ python -m src.main --input examples/live/conflict-on-save.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/conflict-on-save.r01.sqlite --output examples/live/conflict-on-save.output.json --trace examples/live/conflict-on-save.trace.jsonl --data-dir data --max-steps 12 --fault conflict_on_save
+exit=0, elapsed=16.288s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_95ac0f006fa24b1d989e4c8ce8473fd5", "steps": 7}
+
+
+$ python -m src.main --input examples/live/save-response-lost.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/save-response-lost.r01.sqlite --output examples/live/save-response-lost.output.json --trace examples/live/save-response-lost.trace.jsonl --data-dir data --max-steps 12 --fault save_response_lost
+exit=0, elapsed=13.434s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_2178e8fd53fc43e4b67d4640dcd9fb6a", "steps": 6}
+
+
+$ python -m src.main --input examples/live/tool-failure.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/tool-failure.r01.sqlite --output examples/live/tool-failure.output.json --trace examples/live/tool-failure.trace.jsonl --data-dir data --max-steps 12 --fault tool_failure
+exit=0, elapsed=12.191s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_95d40e2caf1d4e3f940fd667ff227296", "steps": 6}
+
+
+$ python -m src.main --input examples/live/step-limit.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/step-limit.r01.sqlite --output examples/live/step-limit.output.json --trace examples/live/step-limit.trace.jsonl --data-dir data --max-steps 2
+exit=1, elapsed=3.381s
+{"task_status": "incomplete", "save_status": "not_saved", "draft_id": null, "steps": 2}
+
+
+$ python -m src.main --input examples/live/changed-slot.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/changed-slot.r01.sqlite --output examples/live/changed-slot.output.json --trace examples/live/changed-slot.trace.jsonl --data-dir examples/live/fixtures/occupied-19 --max-steps 12
+exit=0, elapsed=9.789s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_0d04532137824b6a9f989b13ce65706f", "steps": 5}
+
+
+$ python -m src.main --input examples/live/no-slot.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/no-slot.r01.sqlite --output examples/live/no-slot.output.json --trace examples/live/no-slot.trace.jsonl --data-dir examples/live/fixtures/fully-occupied --max-steps 12
+exit=0, elapsed=9.217s
+{"task_status": "no_available_slot", "save_status": "not_saved", "draft_id": null, "steps": 4}
+
+
+$ python -m src.main --input examples/live/duplicate-submit.input.json --mode live --db .runtime/evaluation/20261030T011004Z-9aa762/normal.r01.sqlite --output examples/live/duplicate-submit.output.json --trace examples/live/duplicate-submit.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=0.238s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_04e562c95c444ca4b460bee305cf7fa9", "steps": 0}
+

@@ -1,0 +1,7 @@
+{
+  "archived_at": "2026-10-30T01:06:11.338Z",
+  "original_artifact_directory": "examples/live",
+  "reason": "Preserve actual initial failures before a prompt-contract correction.",
+  "passed_runs": 10,
+  "total_runs": 14
+}

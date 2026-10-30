@@ -1,0 +1,62 @@
+{
+  "request_id": "R001",
+  "material_id": "M01",
+  "mode": "offline",
+  "model": "offline-simulator",
+  "review": {
+    "status": "pass",
+    "hard_block": false,
+    "missing_fields": [],
+    "checks": [
+      {
+        "rule_id": "required_title",
+        "status": "pass",
+        "severity": "missing_information",
+        "message": "title is required"
+      },
+      {
+        "rule_id": "required_text",
+        "status": "pass",
+        "severity": "missing_information",
+        "message": "text is required"
+      },
+      {
+        "rule_id": "rights_status_known",
+        "status": "pass",
+        "severity": "missing_information",
+        "message": "material rights_status is owned or licensed"
+      },
+      {
+        "rule_id": "blocked_terms_1",
+        "status": "pass",
+        "severity": "hard",
+        "message": "blocked_terms",
+        "evidence": []
+      },
+      {
+        "rule_id": "risk_terms_1",
+        "status": "pass",
+        "severity": "risk",
+        "message": "risk_terms",
+        "evidence": []
+      }
+    ],
+    "risks": []
+  },
+  "risks": [],
+  "original_time": "2026-11-01T17:00:00+08:00",
+  "review_status": "pass",
+  "risk_reasons": [],
+  "missing_fields": [],
+  "pending_items": [],
+  "suggested_time": "2026-11-01T17:00:00+08:00",
+  "confirmation_status": "not_required",
+  "save_status": "saved",
+  "draft_id": "draft_c2ec91bcb5104e01ad4a9e8279d7fab3",
+  "task_status": "completed",
+  "draft_status": "completed",
+  "run_completed": true,
+  "next_step": "none",
+  "steps": 0,
+  "stop_reason": "existing_draft_recovered"
+}

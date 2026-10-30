@@ -1,0 +1,69 @@
+$ python -m src.main --input examples/offline/normal.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/normal.r01.sqlite --output examples/offline/normal.output.json --trace examples/offline/normal.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=0.482s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_c2ec91bcb5104e01ad4a9e8279d7fab3", "steps": 5}
+
+
+$ python -m src.main --input examples/offline/missing-information.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/missing-information.r01.sqlite --output examples/offline/missing-information.output.json --trace examples/offline/missing-information.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=0.535s
+{"task_status": "needs_input", "save_status": "not_saved", "draft_id": null, "steps": 3}
+
+
+$ python -m src.main --input examples/offline/rule-block.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/rule-block.r01.sqlite --output examples/offline/rule-block.output.json --trace examples/offline/rule-block.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=0.385s
+{"task_status": "blocked", "save_status": "not_saved", "draft_id": null, "steps": 3}
+
+
+$ python -m src.main --input examples/offline/time-conflict.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/time-conflict.r01.sqlite --output examples/offline/time-conflict.output.json --trace examples/offline/time-conflict.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=0.295s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_09d19987562043059b4481d353c12c79", "steps": 5}
+
+
+$ python -m src.main --input examples/offline/window-authorized.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/window-authorized.r01.sqlite --output examples/offline/window-authorized.output.json --trace examples/offline/window-authorized.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=0.584s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_e1db0754f9794dd89b28d7653dd48ef7", "steps": 5}
+
+
+$ python -m src.main --input examples/offline/save-failure.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/save-failure.r01.sqlite --output examples/offline/save-failure.output.json --trace examples/offline/save-failure.trace.jsonl --data-dir data --max-steps 12 --fault save_fail_permanent
+exit=0, elapsed=0.553s
+{"task_status": "failed", "save_status": "failed", "draft_id": null, "steps": 5}
+
+
+$ python -m src.main --input examples/offline/risk-confirmation.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/risk-confirmation.r01.sqlite --output examples/offline/risk-confirmation.output.json --trace examples/offline/risk-confirmation.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=0.437s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_7bf83e3231fc4c46b28fd0bd597d548e", "steps": 5}
+
+
+$ python -m src.main --input examples/offline/conflict-on-save.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/conflict-on-save.r01.sqlite --output examples/offline/conflict-on-save.output.json --trace examples/offline/conflict-on-save.trace.jsonl --data-dir data --max-steps 12 --fault conflict_on_save
+exit=0, elapsed=0.508s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_72b393be30064d169718251b65be9602", "steps": 7}
+
+
+$ python -m src.main --input examples/offline/save-response-lost.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/save-response-lost.r01.sqlite --output examples/offline/save-response-lost.output.json --trace examples/offline/save-response-lost.trace.jsonl --data-dir data --max-steps 12 --fault save_response_lost
+exit=0, elapsed=0.681s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_99485ab8abf94df8b750ab617f9cc2da", "steps": 6}
+
+
+$ python -m src.main --input examples/offline/tool-failure.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/tool-failure.r01.sqlite --output examples/offline/tool-failure.output.json --trace examples/offline/tool-failure.trace.jsonl --data-dir data --max-steps 12 --fault tool_failure
+exit=0, elapsed=0.35s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_9c2f955e80bc46aab7b1b3335d67b232", "steps": 6}
+
+
+$ python -m src.main --input examples/offline/step-limit.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/step-limit.r01.sqlite --output examples/offline/step-limit.output.json --trace examples/offline/step-limit.trace.jsonl --data-dir data --max-steps 2
+exit=1, elapsed=0.463s
+{"task_status": "incomplete", "save_status": "not_saved", "draft_id": null, "steps": 2}
+
+
+$ python -m src.main --input examples/offline/changed-slot.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/changed-slot.r01.sqlite --output examples/offline/changed-slot.output.json --trace examples/offline/changed-slot.trace.jsonl --data-dir examples/offline/fixtures/occupied-19 --max-steps 12
+exit=0, elapsed=0.451s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_cbd2e00a28774f5abfc530e602a3ffc4", "steps": 5}
+
+
+$ python -m src.main --input examples/offline/no-slot.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/no-slot.r01.sqlite --output examples/offline/no-slot.output.json --trace examples/offline/no-slot.trace.jsonl --data-dir examples/offline/fixtures/fully-occupied --max-steps 12
+exit=0, elapsed=0.435s
+{"task_status": "no_available_slot", "save_status": "not_saved", "draft_id": null, "steps": 4}
+
+
+$ python -m src.main --input examples/offline/duplicate-submit.input.json --mode offline --db .runtime/evaluation/20261030T011002Z-e588a6/normal.r01.sqlite --output examples/offline/duplicate-submit.output.json --trace examples/offline/duplicate-submit.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=0.365s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_c2ec91bcb5104e01ad4a9e8279d7fab3", "steps": 0}
+

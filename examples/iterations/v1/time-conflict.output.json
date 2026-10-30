@@ -1,0 +1,58 @@
+{
+  "request_id": "R004",
+  "material_id": "M01",
+  "mode": "live",
+  "model": "qwen3.8-max",
+  "review": {
+    "status": "pass",
+    "hard_block": false,
+    "missing_fields": [],
+    "checks": [
+      {
+        "rule_id": "required_title",
+        "status": "pass",
+        "severity": "missing_information",
+        "message": "title is required"
+      },
+      {
+        "rule_id": "required_text",
+        "status": "pass",
+        "severity": "missing_information",
+        "message": "text is required"
+      },
+      {
+        "rule_id": "rights_status_known",
+        "status": "pass",
+        "severity": "missing_information",
+        "message": "material rights_status is owned or licensed"
+      },
+      {
+        "rule_id": "blocked_terms_1",
+        "status": "pass",
+        "severity": "hard",
+        "message": "blocked_terms",
+        "evidence": []
+      },
+      {
+        "rule_id": "risk_terms_1",
+        "status": "pass",
+        "severity": "risk",
+        "message": "risk_terms",
+        "evidence": []
+      }
+    ],
+    "risks": []
+  },
+  "risks": [],
+  "original_time": "2026-11-01T18:00:00+08:00",
+  "suggested_time": "2026-11-01T19:00:00+08:00",
+  "confirmation_status": "pending",
+  "save_status": "not_saved",
+  "draft_id": null,
+  "task_status": "incomplete",
+  "draft_status": null,
+  "run_completed": false,
+  "next_step": "resume_with_same_original_request",
+  "steps": 4,
+  "stop_reason": "model_finished_before_completion"
+}

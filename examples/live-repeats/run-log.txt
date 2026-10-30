@@ -1,0 +1,74 @@
+$ python -m src.main --input examples/live-repeats/time-conflict.r01.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/time-conflict.r01.sqlite --output examples/live-repeats/time-conflict.r01.output.json --trace examples/live-repeats/time-conflict.r01.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=9.243s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_64bf861ac9cc492fa7f2b7e1a131786a", "steps": 5}
+
+
+$ python -m src.main --input examples/live-repeats/window-authorized.r01.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/window-authorized.r01.sqlite --output examples/live-repeats/window-authorized.r01.output.json --trace examples/live-repeats/window-authorized.r01.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=11.655s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_ccee2f31e6184e70bfc997722d237e2b", "steps": 5}
+
+
+$ python -m src.main --input examples/live-repeats/conflict-on-save.r01.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/conflict-on-save.r01.sqlite --output examples/live-repeats/conflict-on-save.r01.output.json --trace examples/live-repeats/conflict-on-save.r01.trace.jsonl --data-dir data --max-steps 12 --fault conflict_on_save
+exit=0, elapsed=13.795s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_5bdfc4a9f8054311b3a36165fa8e6398", "steps": 7}
+
+
+$ python -m src.main --input examples/live-repeats/save-response-lost.r01.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/save-response-lost.r01.sqlite --output examples/live-repeats/save-response-lost.r01.output.json --trace examples/live-repeats/save-response-lost.r01.trace.jsonl --data-dir data --max-steps 12 --fault save_response_lost
+exit=0, elapsed=12.395s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_129de17f77dc456aa0bed9511f57a03d", "steps": 6}
+
+
+$ python -m src.main --input examples/live-repeats/changed-slot.r01.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/changed-slot.r01.sqlite --output examples/live-repeats/changed-slot.r01.output.json --trace examples/live-repeats/changed-slot.r01.trace.jsonl --data-dir examples/live-repeats/fixtures/occupied-19 --max-steps 12
+exit=0, elapsed=9.006s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_cb424645bf094c5ab32b38e2bfadc9ca", "steps": 5}
+
+
+$ python -m src.main --input examples/live-repeats/time-conflict.r02.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/time-conflict.r02.sqlite --output examples/live-repeats/time-conflict.r02.output.json --trace examples/live-repeats/time-conflict.r02.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=8.951s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_0aab117363d1497aa84270ec2ec7fa2b", "steps": 5}
+
+
+$ python -m src.main --input examples/live-repeats/window-authorized.r02.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/window-authorized.r02.sqlite --output examples/live-repeats/window-authorized.r02.output.json --trace examples/live-repeats/window-authorized.r02.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=10.176s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_b5b0fff00ae749718a73eaab1ce3cfad", "steps": 5}
+
+
+$ python -m src.main --input examples/live-repeats/conflict-on-save.r02.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/conflict-on-save.r02.sqlite --output examples/live-repeats/conflict-on-save.r02.output.json --trace examples/live-repeats/conflict-on-save.r02.trace.jsonl --data-dir data --max-steps 12 --fault conflict_on_save
+exit=0, elapsed=13.478s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_68891106dfaa43f784b7ac7e8f5fe783", "steps": 7}
+
+
+$ python -m src.main --input examples/live-repeats/save-response-lost.r02.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/save-response-lost.r02.sqlite --output examples/live-repeats/save-response-lost.r02.output.json --trace examples/live-repeats/save-response-lost.r02.trace.jsonl --data-dir data --max-steps 12 --fault save_response_lost
+exit=0, elapsed=11.741s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_940b0ae72e87406997003f9d0e1e78e6", "steps": 6}
+
+
+$ python -m src.main --input examples/live-repeats/changed-slot.r02.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/changed-slot.r02.sqlite --output examples/live-repeats/changed-slot.r02.output.json --trace examples/live-repeats/changed-slot.r02.trace.jsonl --data-dir examples/live-repeats/fixtures/occupied-19 --max-steps 12
+exit=0, elapsed=9.758s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_a506e4c90f9149778a60052adc5b970b", "steps": 5}
+
+
+$ python -m src.main --input examples/live-repeats/time-conflict.r03.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/time-conflict.r03.sqlite --output examples/live-repeats/time-conflict.r03.output.json --trace examples/live-repeats/time-conflict.r03.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=9.642s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_c7c62794ab1a43e5b40468408d8baf82", "steps": 5}
+
+
+$ python -m src.main --input examples/live-repeats/window-authorized.r03.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/window-authorized.r03.sqlite --output examples/live-repeats/window-authorized.r03.output.json --trace examples/live-repeats/window-authorized.r03.trace.jsonl --data-dir data --max-steps 12
+exit=0, elapsed=12.072s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_1d3ce22d283c45f68ece050b39f78666", "steps": 5}
+
+
+$ python -m src.main --input examples/live-repeats/conflict-on-save.r03.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/conflict-on-save.r03.sqlite --output examples/live-repeats/conflict-on-save.r03.output.json --trace examples/live-repeats/conflict-on-save.r03.trace.jsonl --data-dir data --max-steps 12 --fault conflict_on_save
+exit=0, elapsed=13.858s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_b030fc52803846b9b649425bf7bdb6c1", "steps": 7}
+
+
+$ python -m src.main --input examples/live-repeats/save-response-lost.r03.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/save-response-lost.r03.sqlite --output examples/live-repeats/save-response-lost.r03.output.json --trace examples/live-repeats/save-response-lost.r03.trace.jsonl --data-dir data --max-steps 12 --fault save_response_lost
+exit=0, elapsed=12.69s
+{"task_status": "completed", "save_status": "saved", "draft_id": "draft_a4798e9b29e3411ba6fc70fb36a187ce", "steps": 6}
+
+
+$ python -m src.main --input examples/live-repeats/changed-slot.r03.input.json --mode live --db .runtime/evaluation/20261030T011613Z-d3322d/changed-slot.r03.sqlite --output examples/live-repeats/changed-slot.r03.output.json --trace examples/live-repeats/changed-slot.r03.trace.jsonl --data-dir examples/live-repeats/fixtures/occupied-19 --max-steps 12
+exit=0, elapsed=9.96s
+{"task_status": "pending_confirmation", "save_status": "saved", "draft_id": "draft_8fb46a3bcc23403ca0f44911d0996659", "steps": 5}
+

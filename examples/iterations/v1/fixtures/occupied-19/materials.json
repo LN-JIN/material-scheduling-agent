@@ -1,0 +1,40 @@
+{
+  "materials": [
+    {
+      "material_id": "M01",
+      "title": "一分钟剪出旅行回忆",
+      "text": "原创演示素材，介绍字幕编辑与片段排序。",
+      "duration_minutes": 60,
+      "channel": "main",
+      "version": "v1",
+      "rights_status": "owned"
+    },
+    {
+      "material_id": "M02",
+      "title": "",
+      "text": "待补充标题的原创演示素材。",
+      "duration_minutes": 60,
+      "channel": "main",
+      "version": "v1",
+      "rights_status": "owned"
+    },
+    {
+      "material_id": "M03",
+      "title": "转载片段演示",
+      "text": "此素材包含未经授权转载内容。",
+      "duration_minutes": 60,
+      "channel": "main",
+      "version": "v1",
+      "rights_status": "denied"
+    },
+    {
+      "material_id": "M04",
+      "title": "产品功能演示",
+      "text": "示例文案声称绝对领先，需品牌负责人确认。",
+      "duration_minutes": 60,
+      "channel": "main",
+      "version": "v1",
+      "rights_status": "owned"
+    }
+  ]
+}
